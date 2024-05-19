@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/ganasec/static/css/main.4c90f179.css",
+    "main.js": "/ganasec/static/js/main.346ebd03.js",
+    "static/js/453.4973b179.chunk.js": "/ganasec/static/js/453.4973b179.chunk.js",
+    "static/media/cardbg1.jpg": "/ganasec/static/media/cardbg1.ffd78d1bc3d2c0d18425.jpg",
+    "static/media/logo3.png": "/ganasec/static/media/logo3.efc5fc375873fece735f.png",
+    "index.html": "/ganasec/index.html",
+    "main.4c90f179.css.map": "/ganasec/static/css/main.4c90f179.css.map",
+    "main.346ebd03.js.map": "/ganasec/static/js/main.346ebd03.js.map",
+    "453.4973b179.chunk.js.map": "/ganasec/static/js/453.4973b179.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4c90f179.css",
+    "static/js/main.346ebd03.js"
+  ]
+}
