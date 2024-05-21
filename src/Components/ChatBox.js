@@ -8,7 +8,7 @@ export default function ChatBox(props) {
     props.chatState && 
  <div className="toast chatbox" role="alert" aria-live="assertive" aria-atomic="true">
   <div className="toast-header">
-   <Icon path={mdiClipboardAccountOutline} size={1}/>
+    <span><Icon path={mdiClipboardAccountOutline} size={1}/></span> 
     <strong className="me-auto">GANASEC Team</strong>
     <button type="button" class="btn-close" onClick={props.closeChatbox}></button>
   </div>
@@ -17,8 +17,12 @@ export default function ChatBox(props) {
     <p className="text-start">Looking for the fastest and most affordable Pentest in the market? We're here to help you</p>
     <p className="text-start"> 
     <u>
-    <span>Explore More</span>
-    <Icon  className='fs-2' path={mdiOpenInNew} size={1}/>
+    <a href='http://ganasec.com/'>
+    <span className='active-color'>Explore More</span>
+    <span><Icon className='p-1 active-color' path={mdiOpenInNew} size={1}/></span>
+    </a>
+   
+    
     </u>
     </p>
     

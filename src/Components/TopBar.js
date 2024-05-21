@@ -2,6 +2,7 @@ import React from "react";
 import logo from "../static/logo3.png";
 import Icon from "@mdi/react";
 import { mdiCogs} from "@mdi/js";
+import "./styles.css"; // Import the CSS file
 export default function navBar(props) {
   return (
     <div>
@@ -15,8 +16,8 @@ export default function navBar(props) {
             <img
               src={logo}
               alt="Logo"
-              width="100"
-              height="110"
+              width="80"
+              height="80"
               className="justify-content-start"
             />
           </a>
@@ -56,7 +57,7 @@ export default function navBar(props) {
             </ul>
            <ul className="d-flex navbar-nav fw-bold fs-6">
             <li>
-            <button className="btn btn-outline-primary mx-2 d-flex justify-start" href="#contact">
+            <button className="btn btn-outline-primary  btn-outline-custom mx-2 d-flex justify-start" href="#contact">
             <Icon path={mdiCogs} size={1} className="primary"/>
           <span className="mx-2">Try Tools for free</span>
             </button>
