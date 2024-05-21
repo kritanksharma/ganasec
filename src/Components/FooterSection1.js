@@ -15,7 +15,7 @@ export default function FooterSection1(props) {
   >
     <div className="container my-3 mx-3">
       <div className="row">
-        <div className="col-md-4 text-start">
+        <div className="col-md-6 text-start">
           <div className="card bg-light" style={{ border: "none" }}>
             <div className="card-body m-0 p-0">
               <h4 className="card-title mb-2">
@@ -80,7 +80,7 @@ export default function FooterSection1(props) {
             </div>
           </div>
         </div>
-        <div className="col-md-4 text-start">
+        <div className="col-md-3 text-start">
           <div className="card bg-light" style={{ border: "none" }}>
             <div className="card-body m-0 p-0">
               <h4 className="card-title mb-2">
@@ -473,7 +473,7 @@ export default function FooterSection1(props) {
             </div>
           </div>
         </div>
-        <div className="col-md-4 text-start">
+        <div className="col-md-3 text-start">
           <div className="card bg-light" style={{ border: "none" }}>
             <div className="card-body m-0 p-0">
               <h4 className="card-title mb-2">
