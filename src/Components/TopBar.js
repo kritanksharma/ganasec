@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../static/logo3.png";
+import logo from "../Static/logo3.png";
 import Icon from "@mdi/react";
 import { mdiCogs} from "@mdi/js";
 import "./styles.css"; // Import the CSS file
@@ -12,7 +12,7 @@ export default function navBar(props) {
         style={{ backgroundColor: "black", border: "none" }}
       >
         <div className="container-fluid">
-          <a className="navbar-brand" href="#home">
+          <a className="navbar-brand" href="/">
             <img
               src={logo}
               alt="Logo"
@@ -35,22 +35,22 @@ export default function navBar(props) {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0 fw-bold fs-6">
               <li className="nav-item">
-                <a className="nav-link d-flex justify-start mx-2 " aria-current="page" href="#home">
+                <a className="nav-link d-flex justify-start mx-2 " aria-current="page" href="/">
                  How its works
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link d-flex justify-start mx-2 " href="#services">
+                <a className="nav-link d-flex justify-start mx-2 " href="/services">
                   Services
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link d-flex justify-start mx-2 " href="#about">
+                <a className="nav-link d-flex justify-start mx-2 " href="/about">
                   About Us
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link d-flex justify-start mx-2 " href="#contact">
+                <a className="nav-link d-flex justify-start mx-2 " href="/contact">
                   Let's Connect
                 </a>
               </li>

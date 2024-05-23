@@ -10,13 +10,17 @@ export default function BodySection1(props) {
         >
           <div className="row g-0">
             <div className="col-md-4">
-              <img
-                src={props.body.img1}
-                className="img-fluid rounded-start my-3"
-                alt="..."
-                width="400"
-                height="300"
-              />
+              { props.body.img1 &&
+                (
+                  <img
+                    src={props.body.img1}
+                    className="img-fluid rounded-start my-3"
+                    alt="..."
+                    width="400"
+                    height="300"
+                  />
+                ) 
+              }
             </div>
             <div className="col-md-8">
               <div className="card-body my-3 py-4">
@@ -34,13 +38,19 @@ export default function BodySection1(props) {
           </div>
           <div className="row g-0">
             <div className="col-md-4">
-              <img
-                src={props.body.img2}
-                className="img-fluid rounded-start my-3"
-                alt="..."
-                width="300"
-                height="200"
-              />
+              {
+                props.body.img2 && 
+                (
+                  <img
+                    src={props.body.img2}
+                    className="img-fluid rounded-start my-3"
+                    alt="..."
+                    width="300"
+                    height="200"
+                  />
+
+                )
+              }
             </div>
             <div className="col-md-8">
               <div className="card-body my-3 py-4">

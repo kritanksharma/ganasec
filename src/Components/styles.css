@@ -95,6 +95,20 @@
     color:#378CE7 !important; ;
   
   }
+  /* cards */
+  .card-hover-animation {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transitions for both transform and box-shadow */
+  }
+  
+  .card-hover-animation:hover {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); /* Add a subtle shadow on hover */
+    transform: translateY(-15px); 
+    color: #378CE7  !important;
+  }
+  .content-hover-animation:hover {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); /* Add a subtle shadow on hover */
+    transform: scale(1.05) translateY(-10px);
+  }
   
   
   

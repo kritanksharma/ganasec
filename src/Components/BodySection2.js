@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import bg3 from "../static/bg3.png";
+import bg3 from "../Static/bg3.png";
 import CountUp from 'react-countup'; 
 export default function BodySection2(props) {
   const [blockCount1, setBlockCount1] = useState(Number(props.body.block1.value));
