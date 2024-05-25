@@ -2,7 +2,7 @@ import './App.css'
 import React, { useState} from "react";
 import Icon from "@mdi/react";
 import { mdiForumOutline} from "@mdi/js";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import TopBar from "./Components/TopBar";
 import FooterSection1 from './Components/FooterSection1';
 import ChatBox from './Components/ChatBox';

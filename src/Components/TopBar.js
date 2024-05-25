@@ -2,6 +2,7 @@ import React from "react";
 import logo from "../Static/logo3.png";
 import Icon from "@mdi/react";
 import { mdiCogs} from "@mdi/js";
+import { Link } from "react-router-dom";
 import "./styles.css"; // Import the CSS file
 export default function navBar(props) {
   return (
@@ -12,7 +13,7 @@ export default function navBar(props) {
         style={{ backgroundColor: "black", border: "none" }}
       >
         <div className="container-fluid">
-          <a className="navbar-brand" href="/">
+        <Link to="/" className="navbar-brand" >
             <img
               src={logo}
               alt="Logo"
@@ -20,7 +21,7 @@ export default function navBar(props) {
               height="80"
               className="justify-content-start"
             />
-          </a>
+          </Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -35,24 +36,24 @@ export default function navBar(props) {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0 fw-bold fs-6">
               <li className="nav-item">
-                <a className="nav-link d-flex justify-start mx-2 " aria-current="page" href="/">
+              <Link to="/" className="nav-link d-flex justify-start mx-2 " aria-current="page">
                  How its works
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link d-flex justify-start mx-2 " href="/services">
+              <Link to="/services" className="nav-link d-flex justify-start mx-2 " >
                   Services
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link d-flex justify-start mx-2 " href="/about">
+              <Link to="/about" className="nav-link d-flex justify-start mx-2 ">
                   About Us
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link d-flex justify-start mx-2 " href="/contact">
+              <Link to="/contact"  className="nav-link d-flex justify-start mx-2 " >
                   Let's Connect
-                </a>
+                </Link>
               </li>
             </ul>
            <ul className="d-flex navbar-nav fw-bold fs-6">
