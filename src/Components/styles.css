@@ -95,6 +95,14 @@
     color:#378CE7 !important; ;
   
   }
+
+  /* text */
+  .text:hover{
+    color:#378CE7 !important; 
+    cursor: pointer;
+  
+  }
+
   /* cards */
   .card-hover-animation {
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transitions for both transform and box-shadow */
