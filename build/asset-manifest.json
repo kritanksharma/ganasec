@@ -1,20 +1,23 @@
 {
   "files": {
-    "main.css": "/ganasec/static/css/main.2d6a41b6.css",
-    "main.js": "/ganasec/static/js/main.6f5a80b1.js",
-    "static/js/453.4973b179.chunk.js": "/ganasec/static/js/453.4973b179.chunk.js",
+    "main.css": "/ganasec/static/css/main.a192ec8f.css",
+    "main.js": "/ganasec/static/js/main.de74d726.js",
+    "static/js/453.ba0692dc.chunk.js": "/ganasec/static/js/453.ba0692dc.chunk.js",
     "static/media/bg3.png": "/ganasec/static/media/bg3.c04bfc45c14a1837de5c.png",
     "static/media/cardbg1.jpg": "/ganasec/static/media/cardbg1.ffd78d1bc3d2c0d18425.jpg",
     "static/media/cardbg3.png": "/ganasec/static/media/cardbg3.30092b6e3249f3162b7f.png",
+    "static/media/team2.jpeg": "/ganasec/static/media/team2.0f01af1a2ba31930a160.jpeg",
+    "static/media/team3.jpeg": "/ganasec/static/media/team3.0f01af1a2ba31930a160.jpeg",
     "static/media/logo3.png": "/ganasec/static/media/logo3.efc5fc375873fece735f.png",
     "static/media/cardbg2.svg": "/ganasec/static/media/cardbg2.9f0d003e8fedb87a1fb28a768392b763.svg",
+    "static/media/team1.jpeg": "/ganasec/static/media/team1.ff34a24c63f0bd64ad53.jpeg",
     "index.html": "/ganasec/index.html",
-    "main.2d6a41b6.css.map": "/ganasec/static/css/main.2d6a41b6.css.map",
-    "main.6f5a80b1.js.map": "/ganasec/static/js/main.6f5a80b1.js.map",
-    "453.4973b179.chunk.js.map": "/ganasec/static/js/453.4973b179.chunk.js.map"
+    "main.a192ec8f.css.map": "/ganasec/static/css/main.a192ec8f.css.map",
+    "main.de74d726.js.map": "/ganasec/static/js/main.de74d726.js.map",
+    "453.ba0692dc.chunk.js.map": "/ganasec/static/js/453.ba0692dc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2d6a41b6.css",
-    "static/js/main.6f5a80b1.js"
+    "static/css/main.a192ec8f.css",
+    "static/js/main.de74d726.js"
   ]
 }
