@@ -21,10 +21,10 @@ export default function Works() {
   const headSection1 = {
     textCaption: "What's new at",
     textCaptionHighlight: " GanaSec !",
-    staticText: "Everything you need to be secure, and stay that way ",
+    staticText: "Everything you need to be secure, and stay that way.",
     textOptions: false,
     textUpperCase: true,
-    textAlign: "center",
+    textAlign: "start",
     height: "250px",
     btnOptions: false,
     content:

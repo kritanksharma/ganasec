@@ -9,10 +9,10 @@ export default function InProgress() {
         <img
           src={progress}
           className="card-img"
-          style={{height:"600px" ,width:"600px"}}
+          style={{maxHeight:"600px" ,maxWidth:"600px"}}
           alt="..."
         />
-        <p> Ahh ! We are working on that . While it's out exploring, why not head back to our   <Link to="/">home page</Link> for more information and exciting discoveries?</p>
+        <p className="m-2"> Ahh ! We are working on that . While it's out exploring, why not head back to our   <Link to="/">home page</Link> for more information and exciting discoveries?</p>
         </div>
     
     </div>

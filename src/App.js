@@ -13,6 +13,7 @@ import Works from './Pages/Works';
 import ErrorPage from './Pages/ErrorPage';
 import InProgress from './Pages/InProgress';
 import Penetration from './Pages/Penetration';
+import Services from './Pages/Services';
 
 function App() {
   const footerSection = {
@@ -36,8 +37,10 @@ function App() {
          <Route exact path="/" element={<Home />} />
          <Route path="/works" element={<Works/>} />
          <Route path="/about" element={<About />} />
+         <Route path="/services" element={<Services />} />
          <Route path="/penetration" element={<Penetration />} />
          <Route path="/inprogress" element={<InProgress />} />
+         
          {/* Catch-all route for the error page */}
          <Route path="*" element={<ErrorPage/>} />
          </Routes>

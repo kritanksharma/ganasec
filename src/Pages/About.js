@@ -10,8 +10,8 @@ import BodySection1 from "../Components/BodySection1";
 export default function About() {
   const headSection1 = {
     textCaption: "Who are ",
-    textCaptionHighlight: "  We ?",
-    staticText: "Disrupting the penetration testing industry",
+    textCaptionHighlight: "We?",
+    staticText: "Disrupting the penetration testing industry.",
     textOptions: false,
     textUpperCase: true,
     textAlign: "start",

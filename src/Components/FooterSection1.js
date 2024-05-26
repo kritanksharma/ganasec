@@ -115,7 +115,7 @@ export default function FooterSection1(props) {
                             This Usage Agreement (the "Agreement") is entered into between Hackcura,
                             referred to as "we," "our," or "us," and the user, referred to as "you"
                             or "user," for the utilization of our services and products. By
-                            accessing, browsing, or using Hackcura's website, applications, or any
+                            accessing, browsing, or using GanaSec's website, applications, or any
                             of our offerings, you acknowledge and agree to comply with the terms
                             outlined in this Agreement. If you do not agree with these terms, please
                             refrain from using our services.
@@ -124,7 +124,7 @@ export default function FooterSection1(props) {
                         <p>
                           {" "}
                           <small>
-                            <b>1. Acceptable Use:</b> You agree to use Hackcura's services solely
+                            <b>1. Acceptable Use:</b> You agree to use GanaSec's services solely
                             for lawful purposes and in accordance with applicable laws and
                             regulations. You will not engage in any activities that could harm,
                             disrupt, or compromise our services, infrastructure, or other users'
@@ -143,7 +143,7 @@ export default function FooterSection1(props) {
                         <p>
                           {" "}
                           <small>
-                            <b>3. Privacy and Data:</b> Your use of Hackcura's services is subject
+                            <b>3. Privacy and Data:</b> Your use of GanaSec's services is subject
                             to our Privacy Policy. By using our services, you consent to the
                             collection, use, and processing of your data as described in the Privacy
                             Policy
@@ -161,7 +161,7 @@ export default function FooterSection1(props) {
                         <p>
                           {" "}
                           <small>
-                            <b>5. Disclaimer: </b>Hackcura's services are provided on an "as-is"
+                            <b>5. Disclaimer: </b>GanaSec's services are provided on an "as-is"
                             basis, and we do not make any warranties, express or implied, regarding
                             their accuracy, reliability, or suitability for your needs. We shall not
                             be liable for any damages arising from your use of our services.
@@ -269,7 +269,7 @@ export default function FooterSection1(props) {
                         </p>
                         <p>
                           <small>
-                            By accessing or using Hackcura's services, you agree to the following
+                            By accessing or using GanaSec's services, you agree to the following
                             Terms of Use:
                           </small>
                         </p>
@@ -359,7 +359,7 @@ export default function FooterSection1(props) {
                             This Disclaimer Agreement ("Agreement") is entered into between
                             Hackcura, referred to as "we," "our," or "us," and the user, referred to
                             as "you" or "user," for the purpose of providing information and
-                            services. By accessing, browsing, or using Hackcura's website,
+                            services. By accessing, browsing, or using GanaSec's website,
                             applications, or any of our offerings, you acknowledge and agree to
                             comply with the terms outlined in this Agreement. If you do not agree
                             with these terms, please refrain from using our services.
@@ -367,7 +367,7 @@ export default function FooterSection1(props) {
                         </p>
                         <p>
                           <small>
-                            <b>1. Information Accuracy:</b> The information provided on Hackcura's
+                            <b>1. Information Accuracy:</b> The information provided on GanaSec's
                             website and services is for general informational purposes only. We make
                             no representations or warranties regarding the accuracy, completeness,
                             or reliability of the content.
