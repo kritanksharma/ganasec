@@ -1,14 +1,17 @@
 {
   "files": {
     "main.css": "/ganasec/static/css/main.ca02c3f2.css",
-    "main.js": "/ganasec/static/js/main.f2975dff.js",
+    "main.js": "/ganasec/static/js/main.70b26510.js",
     "static/js/453.ba0692dc.chunk.js": "/ganasec/static/js/453.ba0692dc.chunk.js",
     "static/media/bg3.png": "/ganasec/static/media/bg3.c04bfc45c14a1837de5c.png",
     "static/media/cardbg1.jpg": "/ganasec/static/media/cardbg1.ffd78d1bc3d2c0d18425.jpg",
+    "static/media/service2.jpeg": "/ganasec/static/media/service2.2813d047a10f02aa4140.jpeg",
     "static/media/logo.png": "/ganasec/static/media/logo.a72246e2f48cfd68e9ee.png",
     "static/media/main1.png": "/ganasec/static/media/main1.9e6357c82031bd7ca73a.png",
     "static/media/connect.png": "/ganasec/static/media/connect.328b2fa24492c78944c1.png",
     "static/media/error.png": "/ganasec/static/media/error.6bd8d473146f46adb9c6.png",
+    "static/media/service5.jpeg": "/ganasec/static/media/service5.2127bcdb35499e1ee449.jpeg",
+    "static/media/service3.jpeg": "/ganasec/static/media/service3.4aad3e76980b8b56c790.jpeg",
     "static/media/team2.jpeg": "/ganasec/static/media/team2.0f01af1a2ba31930a160.jpeg",
     "static/media/team3.jpeg": "/ganasec/static/media/team3.0f01af1a2ba31930a160.jpeg",
     "static/media/Vulnerability.svg": "/ganasec/static/media/Vulnerability.20332eee7bf4e568b900d4405a3a4ec9.svg",
@@ -23,11 +26,11 @@
     "static/media/Reporting.svg": "/ganasec/static/media/Reporting.65c817f60b91139874737d9d64711d3a.svg",
     "index.html": "/ganasec/index.html",
     "main.ca02c3f2.css.map": "/ganasec/static/css/main.ca02c3f2.css.map",
-    "main.f2975dff.js.map": "/ganasec/static/js/main.f2975dff.js.map",
+    "main.70b26510.js.map": "/ganasec/static/js/main.70b26510.js.map",
     "453.ba0692dc.chunk.js.map": "/ganasec/static/js/453.ba0692dc.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ca02c3f2.css",
-    "static/js/main.f2975dff.js"
+    "static/js/main.70b26510.js"
   ]
 }
