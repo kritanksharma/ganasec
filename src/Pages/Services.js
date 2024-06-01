@@ -39,7 +39,7 @@ export default function Services() {
       img: service2,
     },
     {
-      textCaption: "MOBILE APPILCATION",
+      textCaption: "MOBILE APPLICATION",
       textCaptionHighlight: " PENETRATION",
       headIcon: "",
       staticText: " ",

@@ -1,6 +1,6 @@
 import React from "react";
 import Icon from "@mdi/react";
-import logo from "../Static/logo3.png";
+import logo from "../Static/logo6.png";
 import {
   mdiFacebook,
   mdiLinkedin,
@@ -28,9 +28,9 @@ export default function FooterSection1(props) {
                 <h4 className="card-title mb-2">
                   <img
                     src={logo}
-                    alt="Logo"
-                    width="40"
-                    height="40"
+                    alt="GanaSec"
+                    width="60"
+                    height="60"
                     className="justify-content-start h-3 mx-2"
                   />
                   <b>{props.footer.title}</b>
