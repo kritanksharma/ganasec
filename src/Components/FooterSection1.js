@@ -1,14 +1,7 @@
 import React from "react";
 import Icon from "@mdi/react";
 import logo from "../Static/logo6.png";
-import {
-  mdiFacebook,
-  mdiLinkedin,
-  mdiTwitter,
-  mdiInstagram,
-  mdiPost,
-  mdiYoutubeSubscription,
-} from "@mdi/js";
+import { mdiFacebook, mdiLinkedin, mdiTwitter, mdiPost, mdiYoutubeSubscription } from "@mdi/js";
 export default function FooterSection1(props) {
   return (
     <div
@@ -39,25 +32,19 @@ export default function FooterSection1(props) {
                   <small>{props.footer.block}</small>
                 </p>
                 <p className="p-1 bg-light">
-                  <a href="https://www.facebook.com/Hackcura/" className="text-dark icon">
+                  <a href={props.footer.facebook} className="text-dark icon">
                     <Icon className="p-1" path={mdiFacebook} size={1} title="Facebook" />
                   </a>
-                  <a href="https://www.linkedin.com/company/hackcura" className="text-dark icon">
+                  <a href={props.footer.linkedin} className="text-dark icon">
                     <Icon className="p-1" path={mdiLinkedin} size={1} title="LinkedIn" />
                   </a>
-                  <a href="https://twitter.com/hackcura" className="text-dark icon">
+                  <a href={props.footer.twitter} className="text-dark icon">
                     <Icon className="p-1" path={mdiTwitter} size={1} title="Twitter" />
                   </a>
-                  <a href="https://www.instagram.com/hackcura_/" className="text-dark icon">
-                    <Icon className="p-1" path={mdiInstagram} size={1} title="Instagram" />
-                  </a>
-                  <a href="https://medium.com/hackcura" className="text-dark icon">
+                  <a href={props.footer.blog} className="text-dark icon">
                     <Icon className="p-1" path={mdiPost} size={1} title="Medium" />
                   </a>
-                  <a
-                    href="https://www.youtube.com/channel/UCVm2UboG1L6x3MiCcEW4KfA"
-                    className="text-dark icon"
-                  >
+                  <a href={props.footer.youtube} className="text-dark icon">
                     <Icon className="p-1" path={mdiYoutubeSubscription} size={1} title="You Tube" />
                   </a>
                 </p>
@@ -70,13 +57,6 @@ export default function FooterSection1(props) {
                 <h4 className="card-title mb-2">
                   <b>About Us</b>
                 </h4>
-                <p className="fs-6 fw-semibold">
-                  <small>
-                    <a className="nav-link icon" href="/about">
-                      Know More
-                    </a>
-                  </small>
-                </p>
                 <p className="fs-6 fw-semibold icon">
                   <small>
                     <a
@@ -112,11 +92,11 @@ export default function FooterSection1(props) {
                       <div className="modal-body fw-normal text-secondary">
                         <p>
                           <small>
-                            This Usage Agreement (the "Agreement") is entered into between Hackcura,
+                            This Usage Agreement (the "Agreement") is entered into between Ganasec,
                             referred to as "we," "our," or "us," and the user, referred to as "you"
                             or "user," for the utilization of our services and products. By
-                            accessing, browsing, or using GanaSec's website, applications, or any
-                            of our offerings, you acknowledge and agree to comply with the terms
+                            accessing, browsing, or using GanaSec's website, applications, or any of
+                            our offerings, you acknowledge and agree to comply with the terms
                             outlined in this Agreement. If you do not agree with these terms, please
                             refrain from using our services.
                           </small>
@@ -124,27 +104,26 @@ export default function FooterSection1(props) {
                         <p>
                           {" "}
                           <small>
-                            <b>1. Acceptable Use:</b> You agree to use GanaSec's services solely
-                            for lawful purposes and in accordance with applicable laws and
-                            regulations. You will not engage in any activities that could harm,
-                            disrupt, or compromise our services, infrastructure, or other users'
-                            experience.
+                            <b>1. Acceptable Use:</b> You agree to use GanaSec's services solely for
+                            lawful purposes and in accordance with applicable laws and regulations.
+                            You will not engage in any activities that could harm, disrupt, or
+                            compromise our services, infrastructure, or other users' experience.
                           </small>
                         </p>
                         <p>
                           {" "}
                           <small>
                             <b>2. Intellectual Property:</b> All content, materials, trademarks, and
-                            intellectual property provided by Hackcura are protected by copyright
-                            and other applicable laws. You may not modify, distribute, reproduce, or
-                            use our intellectual property without explicit consent.
+                            intellectual property provided by Ganasec are protected by copyright and
+                            other applicable laws. You may not modify, distribute, reproduce, or use
+                            our intellectual property without explicit consent.
                           </small>
                         </p>
                         <p>
                           {" "}
                           <small>
-                            <b>3. Privacy and Data:</b> Your use of GanaSec's services is subject
-                            to our Privacy Policy. By using our services, you consent to the
+                            <b>3. Privacy and Data:</b> Your use of GanaSec's services is subject to
+                            our Privacy Policy. By using our services, you consent to the
                             collection, use, and processing of your data as described in the Privacy
                             Policy
                           </small>
@@ -223,9 +202,9 @@ export default function FooterSection1(props) {
                       <div className="modal-body fw-normal text-secondary">
                         <p>
                           <small>
-                            At Hackcura, we are committed to protecting your privacy and ensuring
-                            the security of your personal information. This Privacy Policy outlines
-                            how we collect, use, and safeguard your data when you use our services.
+                            At Ganasec, we are committed to protecting your privacy and ensuring the
+                            security of your personal information. This Privacy Policy outlines how
+                            we collect, use, and safeguard your data when you use our services.
                           </small>
                         </p>
                         <p>
@@ -298,9 +277,9 @@ export default function FooterSection1(props) {
                         </p>
                         <p>
                           <small>
-                            <b>4. Limitation of Liability:</b> Hackcura is not liable for any
-                            damages or losses arising from your use of our services. We provide our
-                            services "as is" and do not guarantee their accuracy or availability.
+                            <b>4. Limitation of Liability:</b> Ganasec is not liable for any damages
+                            or losses arising from your use of our services. We provide our services
+                            "as is" and do not guarantee their accuracy or availability.
                           </small>
                         </p>
                         <p>
@@ -312,7 +291,7 @@ export default function FooterSection1(props) {
                         </p>
                         <p>
                           <small>
-                            <b>6. Changes to Terms:</b> Hackcura may update or modify these Terms of
+                            <b>6. Changes to Terms:</b> Ganasec may update or modify these Terms of
                             Use at any time. Your continued use of our services after such changes
                             constitutes your acceptance of the updated terms.
                           </small>
@@ -356,13 +335,13 @@ export default function FooterSection1(props) {
                       <div className="modal-body fw-normal text-secondary">
                         <p>
                           <small>
-                            This Disclaimer Agreement ("Agreement") is entered into between
-                            Hackcura, referred to as "we," "our," or "us," and the user, referred to
-                            as "you" or "user," for the purpose of providing information and
-                            services. By accessing, browsing, or using GanaSec's website,
-                            applications, or any of our offerings, you acknowledge and agree to
-                            comply with the terms outlined in this Agreement. If you do not agree
-                            with these terms, please refrain from using our services.
+                            This Disclaimer Agreement ("Agreement") is entered into between Ganasec,
+                            referred to as "we," "our," or "us," and the user, referred to as "you"
+                            or "user," for the purpose of providing information and services. By
+                            accessing, browsing, or using GanaSec's website, applications, or any of
+                            our offerings, you acknowledge and agree to comply with the terms
+                            outlined in this Agreement. If you do not agree with these terms, please
+                            refrain from using our services.
                           </small>
                         </p>
                         <p>
@@ -375,7 +354,7 @@ export default function FooterSection1(props) {
                         </p>
                         <p>
                           <small>
-                            <b>2. No Professional Advice:</b> The content provided by Hackcura does
+                            <b>2. No Professional Advice:</b> The content provided by Ganasec does
                             not constitute professional advice, and you should not rely on it as
                             such. You are encouraged to seek advice from qualified professionals
                             regarding specific matters.
@@ -383,15 +362,15 @@ export default function FooterSection1(props) {
                         </p>
                         <p>
                           <small>
-                            <b>3. No Endorsement:</b> Hackcura may provide links to external
-                            websites or resources for convenience. We do not endorse or assume any
+                            <b>3. No Endorsement:</b> Ganasec may provide links to external websites
+                            or resources for convenience. We do not endorse or assume any
                             responsibility for the content, products, or services offered by third
                             parties.
                           </small>
                         </p>
                         <p>
                           <small>
-                            <b>4. Limitation of Liability:</b> Hackcura shall not be liable for any
+                            <b>4. Limitation of Liability:</b> Ganasec shall not be liable for any
                             damages or losses arising from your use of our services or reliance on
                             the information provided. We are not responsible for any errors,
                             omissions, or inaccuracies in the content.
@@ -399,7 +378,7 @@ export default function FooterSection1(props) {
                         </p>
                         <p>
                           <small>
-                            <b>5. Changes to Agreement:</b> Hackcura may update or modify this
+                            <b>5. Changes to Agreement:</b> Ganasec may update or modify this
                             Agreement at any time. Your continued use of our services after any such
                             changes constitutes your acceptance of the updated terms.
                           </small>
@@ -434,11 +413,13 @@ export default function FooterSection1(props) {
                     <b>Email</b> : {props.footer.email}
                   </small>
                 </p>
-                <p className="fs-6">
-                  <small>
-                    <b>Telephone</b>: {props.footer.number}
-                  </small>
-                </p>
+                {props.footer.number && (
+                  <p className="fs-6">
+                    <small>
+                      <b>Telephone</b>: {props.footer.number}
+                    </small>
+                  </p>
+                )}
               </div>
             </div>
           </div>
