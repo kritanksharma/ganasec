@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ganasec/static/css/main.ca02c3f2.css",
-    "main.js": "/ganasec/static/js/main.04217be1.js",
+    "main.css": "/ganasec/static/css/main.dc821f52.css",
+    "main.js": "/ganasec/static/js/main.b254d321.js",
     "static/js/453.4973b179.chunk.js": "/ganasec/static/js/453.4973b179.chunk.js",
     "static/media/bg3.png": "/ganasec/static/media/bg3.c04bfc45c14a1837de5c.png",
     "static/media/cardbg1.jpg": "/ganasec/static/media/cardbg1.ffd78d1bc3d2c0d18425.jpg",
@@ -23,12 +23,12 @@
     "static/media/Reporting.svg": "/ganasec/static/media/Reporting.65c817f60b91139874737d9d64711d3a.svg",
     "index.html": "/ganasec/index.html",
     "static/media/user-scan.svg": "/ganasec/static/media/user-scan.02fa70b79c7117b4252ee98ce076d3b1.svg",
-    "main.ca02c3f2.css.map": "/ganasec/static/css/main.ca02c3f2.css.map",
-    "main.04217be1.js.map": "/ganasec/static/js/main.04217be1.js.map",
+    "main.dc821f52.css.map": "/ganasec/static/css/main.dc821f52.css.map",
+    "main.b254d321.js.map": "/ganasec/static/js/main.b254d321.js.map",
     "453.4973b179.chunk.js.map": "/ganasec/static/js/453.4973b179.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ca02c3f2.css",
-    "static/js/main.04217be1.js"
+    "static/css/main.dc821f52.css",
+    "static/js/main.b254d321.js"
   ]
 }
