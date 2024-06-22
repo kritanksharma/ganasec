@@ -4,7 +4,7 @@ export default function ConnectSection(props) {
   return (
    props.connectState && (
     <div className="modal p-3" aria-live="assertive" aria-atomic="true" style={{display:'block'}}>
-         <div className="modal-dialog modal-dialog-centered">
+         <div className="modal-dialog modal-dialog-centered slide-upward">
            <div className="modal-content">
            <div className="modal-header">
            <button type="button" className="btn-close" data-bs-dismiss="modal" onClick={props.closeConnect}></button>

@@ -1,17 +1,17 @@
 import React from "react";
-import { mdiOpenInNew} from "@mdi/js";
+import { mdiOpenInNew } from "@mdi/js";
 import service1 from "../Static/services/service3.jpeg";
 import service2 from "../Static/services/service5.jpeg";
 import service3 from "../Static/services/service2.jpeg";
 import ServiceSection from "../Components/ServiceSection";
 export default function Services() {
-    const heading ={
-        h1 : "Unveiling Advanced Solutions." ,
-    }
-    const headingCaption ={
-        HC1 : "What we can", 
-        HC2 : "provide?"
-    }
+  const heading = {
+    h1: "Unveiling Advanced Solutions.",
+  };
+  const headingCaption = {
+    HC1: "What we can",
+    HC2: "provide?",
+  };
   const serviceSection = [
     {
       textCaption: "WEB APPLICATION & API ",
@@ -52,19 +52,23 @@ export default function Services() {
     },
   ];
   return (
-    <div style={{
+    <div
+      style={{
         backgroundColor: "black",
         width: "100%",
         height: "100%",
         borderRadius: "0px",
-      }}>
-         <h4 className="fs-4 text-light fw-bold px-3 pt-2 text-start">
-         <span>{headingCaption.HC1 && headingCaption.HC1.toUpperCase()}</span>{" "}
-        <span className="active-color">{headingCaption.HC2 && headingCaption.HC2.toUpperCase()}</span>
-          </h4>
-      <h3 className=" display-6 text-light fw-bold pb-3 px-3 text-start">
+      }}
+    >
+      <h4 className="fs-4 text-light fw-bold px-3 pt-2 text-start slide-forward">
+        <span>{headingCaption.HC1 && headingCaption.HC1.toUpperCase()}</span>{" "}
+        <span className="active-color">
+          {headingCaption.HC2 && headingCaption.HC2.toUpperCase()}
+        </span>
+      </h4>
+      <h3 className=" display-6 text-light fw-bold pb-3 px-3 text-start slide-forward">
         <span>{heading.h1 && heading.h1.toUpperCase()}</span>{" "}
-        <span className="active-color">{heading.h2 && heading.h2.toUpperCase()}</span> 
+        <span className="active-color">{heading.h2 && heading.h2.toUpperCase()}</span>
       </h3>
       <ServiceSection services={serviceSection} />
     </div>

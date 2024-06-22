@@ -41,7 +41,7 @@ export default function Home() {
   };
   return (
     <div>
-      <HeadSection head={headSection1} />
+      <HeadSection head={headSection1}/>
       <BodySection1 body={bodySection1} />
       <BodySection2 body={bodySection2} />
     </div>

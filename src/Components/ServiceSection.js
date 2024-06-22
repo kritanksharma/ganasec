@@ -40,7 +40,10 @@ export default function ServiceSection(props) {
           </div>
           <div className="carousel-inner" style={{ maxHeight: "800px" }}>
             {props.services.map((element, index) => (
-              <div className={`carousel-item ${index === 0 ? "active" : ""}`} key={index}>
+              <div
+                className={`carousel-item ${index === 0 ? "active" : ""} slide-upward`}
+                key={index}
+              >
                 <div
                   className="card"
                   style={{
@@ -73,7 +76,12 @@ export default function ServiceSection(props) {
                     <Link to={element.linkURL} style={{ textDecoration: "none" }}>
                       <p className="card-text fs-6 active-color">
                         {element.linkName}
-                        <Icon path={element.linkIcon} size={1} color="#378CE7" className="mx-1 p-1" />
+                        <Icon
+                          path={element.linkIcon}
+                          size={1}
+                          color="#378CE7"
+                          className="mx-1 p-1"
+                        />
                       </p>
                     </Link>
                   </div>

@@ -4,6 +4,7 @@ import Icon from "@mdi/react";
 import { mdiCubeScan } from "@mdi/js";
 import { mdiCogs } from "@mdi/js";
 import "./styles.css"; // Import the CSS file
+import AnimateBlock from "./AnimateBlock";
 
 export default function HeadSection(props) {
   const [dynamicText, setDynamicText] = useState("With Vigilance Always at the Fore.");
@@ -36,42 +37,51 @@ export default function HeadSection(props) {
         }}
       >
         <div className={`card-body mx-3 text-${props.head.textAlign}`}>
-          <h4 className="fs-4 text-light fw-bold my-2">
-            {props.head.textUpperCase
-              ? props.head.textCaption.toUpperCase()
-              : props.head.textCaption}
-            <span className="active-color">
+          <AnimateBlock animationClass="slide-forward">
+            <h4 className="fs-4 text-light fw-bold my-2 content-to-animate">
               {props.head.textUpperCase
-                ? props.head.textCaptionHighlight.toUpperCase()
-                : props.head.textCaptionHighlight}
-            </span>
-          </h4>
-          <h3 className="display-6 text-light fw-bold mb-3">
-            {props.head.textUpperCase
-              ? props.head.staticText.toUpperCase()
-              : props.head.staticText + " "}
-            <p className={`active-color text-opacity-75 text-${props.head.textAlign}`}>
-              {props.head.textOptions &&
-                (props.head.textUpperCase ? dynamicText.toUpperCase() : dynamicText)}
+                ? props.head.textCaption.toUpperCase()
+                : props.head.textCaption}
+              <span className="active-color">
+                {props.head.textUpperCase
+                  ? props.head.textCaptionHighlight.toUpperCase()
+                  : props.head.textCaptionHighlight}
+              </span>
+            </h4>
+            <h3 className="display-6 text-light fw-bold mb-3 content-to-animate">
+              {props.head.textUpperCase
+                ? props.head.staticText.toUpperCase()
+                : props.head.staticText + " "}
+              <p className={`active-color text-opacity-75 text-${props.head.textAlign}`}>
+                {props.head.textOptions &&
+                  (props.head.textUpperCase ? dynamicText.toUpperCase() : dynamicText)}
+              </p>
+            </h3>
+          </AnimateBlock>
+          <AnimateBlock animationClass="slide-upward">
+            <p className="card-text fs-6 text-secondary ontent-to-animate subtext">
+              {props.head.content}
             </p>
-          </h3>
-          <p className="card-text fs-6 text-secondary">{props.head.content}</p>
-          {props.head.btnOptions && (
-            <div>
-             <Link to="/penetration" >
-              <button type="button" className="btn btn-primary btn-custom m-2 mt-3">
-                <Icon path={mdiCubeScan} size={1} color="#FFFFFF" />
-                <span className="mx-2">Penetration Testing</span>
-              </button>
-              </Link>
-              <Link to="/inprogress" >
-              <button type="button" className="btn btn-outline-primary btn-outline-custom m-2 mt-3">
-                <Icon path={mdiCogs} size={1} className="primary" />
-                <span className="mx-2">Try few Vunerablity Tools</span>
-              </button>
-              </Link>
-            </div>
-          )}
+            {props.head.btnOptions && (
+              <div className="content-to-animate">
+                <Link to="/penetration">
+                  <button type="button" className="btn btn-primary btn-custom m-2 mt-3">
+                    <Icon path={mdiCubeScan} size={1} color="#FFFFFF" />
+                    <span className="mx-2">Penetration Testing</span>
+                  </button>
+                </Link>
+                <Link to="/inprogress">
+                  <button
+                    type="button"
+                    className="btn btn-outline-primary btn-outline-custom m-2 mt-3"
+                  >
+                    <Icon path={mdiCogs} size={1} className="primary" />
+                    <span className="mx-2">Try few Vunerablity Tools</span>
+                  </button>
+                </Link>
+              </div>
+            )}
+          </AnimateBlock>
         </div>
         <img
           src={props.head.cardbg1}

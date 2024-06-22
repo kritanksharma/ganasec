@@ -18,12 +18,17 @@ export default function TeamSection(props) {
         <h1 className="text-center m-4 fw-bold">Our Leadership Team</h1>
         <div className="row my-4">
           {props.team.map((element, index) => (
-              <div className="col-md-4 my-2 text-start">
+            <div className="col-md-4 my-2 text-start" key={index}>
               <div
                 className="card bg-light border-0 shadow-lg overflow-hidden card-hover-animation"
                 style={{ border: "none" }}
               >
-                <img src={element.photo} className="card-img-top" alt="..." style={{background:'#E6E6E6'}}/>
+                <img
+                  src={element.photo}
+                  className="card-img-top"
+                  alt="..."
+                  style={{ background: "#E6E6E6" }}
+                />
                 <div className="card-body">
                   <h5 className="card-title fw-bold">{element.name}</h5>
                   <p className="card-subtitle"> {element.role}</p>
@@ -39,7 +44,6 @@ export default function TeamSection(props) {
               </div>
             </div>
           ))}
-         
         </div>
       </div>
     </div>
