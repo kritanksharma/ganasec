@@ -15,8 +15,6 @@ export default function Home() {
     textUpperCase: false,
     btnOptions: true,
     textAlign: "start",
-    height: "75vh",
-    width: "45vw",
     content:
       "Simplifying cybersecurity precision. Our budget-friendly pen tests fortify your digital world, empowering business growth and safety. Join us , where security challenges transform into growth opportunities. Experience the fastest, most affordable solutions for compliance and year-round asset security.",
     cardbg1: cardbg1,

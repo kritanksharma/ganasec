@@ -14,7 +14,7 @@ export default function HeadSection2(props) {
         style={{
           backgroundColor: "black",
           width: "100%",
-          height: "90vh",
+          height: "100%",
           borderRadius: "0px",
         }}
       >
@@ -72,7 +72,7 @@ export default function HeadSection2(props) {
           <div className="col-md-4">
             <img
               src={props.head.cardbg1}
-              className="card-img-bottom"
+              className="card-img-bottom mx-4"
               alt="..."
               style={{ height: props.head.height, width: props.head.width }}
             />
