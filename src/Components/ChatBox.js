@@ -10,7 +10,7 @@ export default function ChatBox(props) {
             <Icon path={mdiClipboardAccountOutline} size={1} />
           </span>
           <strong className="me-auto">GANASEC Team</strong>
-          <button type="button" class="btn-close" onClick={props.closeChatbox}></button>
+          <button type="button" className="btn-close" onClick={props.closeChatbox}></button>
         </div>
         <div className="toast-body">
           <p className="text-start">Hello !</p>

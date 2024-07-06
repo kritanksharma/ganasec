@@ -18,10 +18,10 @@ export default function HeadSection2(props) {
           borderRadius: "0px",
         }}
       >
-        <div class="row g-0">
-          <div class="col-md-7">
+        <div className="row g-0">
+          <div className="col-md-7">
             <div className={`card-body mx-3 text-${props.head.textAlign}`}>
-              <AnimateBlock animationClass="slide-forward">
+              <AnimateBlock animationclassName="slide-forward">
                 <h4 className="fs-5 text-light fw-bold my-4 content-to-animate">
                   {props.head.textUpperCase
                     ? props.head.textCaption.toUpperCase()
@@ -43,7 +43,7 @@ export default function HeadSection2(props) {
                   </p>
                 </h3>
               </AnimateBlock>
-              <AnimateBlock animationClass="slide-upward">
+              <AnimateBlock animationclassName="slide-upward">
                 <p className="card-text fs-6 text-secondary content-to-animate subtext">
                   {props.head.content}
                 </p>
@@ -69,12 +69,12 @@ export default function HeadSection2(props) {
               </AnimateBlock>
             </div>
           </div>
-          <div class="col-md-4">
+          <div className="col-md-4">
             <img
               src={props.head.cardbg1}
               className="card-img-bottom"
               alt="..."
-              style={{ height: props.head.height , width: props.head.width }}
+              style={{ height: props.head.height, width: props.head.width }}
             />
           </div>
         </div>
