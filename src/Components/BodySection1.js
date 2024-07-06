@@ -40,8 +40,9 @@ export default function BodySection1(props) {
               <AnimateBlock animationClass="slide-backward">
                 <img
                   src={props.body.img2}
-                  className="img-fluid rounded-start my-3  content-to-animate"
+                  className="img-fluid rounded-start mb-4 content-to-animate"
                   alt="..."
+                  style={{height:props.body.height2 , width:props.body.width2}}
                 />
               </AnimateBlock>
             )}

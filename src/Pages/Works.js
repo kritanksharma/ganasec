@@ -23,7 +23,7 @@ export default function Works() {
     textCaptionHighlight: " GanaSec !",
     staticText: "Everything you need to be secure, and stay that way.",
     textOptions: false,
-    textUpperCase: true,
+    textUpperCase: false,
     textAlign: "start",
     height: "250px",
     btnOptions: false,

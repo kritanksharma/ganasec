@@ -1,113 +1,58 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Icon from "@mdi/react";
 import { Link } from "react-router-dom";
 import "./styles.css"; // Import the CSS file
 
 export default function ServiceSection(props) {
-  useEffect(() => {
-    // Function to simulate clicking the "Next" button
-    const clickNext = () => {
-      const nextButton = document.querySelector(".carousel-control-next");
-      if (nextButton) {
-        nextButton.click();
-      }
-    };
-
-    // Start the interval to click "Next" every 5 second (5000 milliseconds)
-    const interval = setInterval(clickNext, 5000);
-
-    // Clear the interval when the component unmounts
-    return () => {
-      clearInterval(interval);
-    };
-  }, []);
   return (
     <>
-      <div style={{ width: "100%", borderRadius: "0px", border: "none" }}>
-        <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
-          <div className="carousel-indicators my-2">
-            {props.services.map((_, index) => (
-              <button
-                key={index}
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide-to={index}
-                className={index === 0 ? "active" : ""}
-                aria-current={index === 0 ? "true" : "false"}
-                aria-label={`Slide ${index + 1}`}
-              ></button>
-            ))}
-          </div>
-          <div className="carousel-inner" style={{ maxHeight: "800px" }}>
-            {props.services.map((element, index) => (
-              <div
-                className={`carousel-item ${index === 0 ? "active" : ""} slide-upward`}
-                key={index}
-              >
-                <div
-                  className="card"
-                  style={{
-                    backgroundColor: "black",
-                    width: "100%",
-                    height: "100%",
-                    borderRadius: "0px",
-                  }}
-                >
-                  <div className="card-body text-start">
-                    <h4 className="fs-4 text-light fw-bold my-2">
-                      {element.headIcon && (
-                        <Icon path={element.headIcon} size={1} color="#378CE7" className="mx-2" />
-                      )}
-                      {element.textUpperCase
-                        ? element.textCaption.toUpperCase()
-                        : element.textCaption}
-                      <span className="active-color">
-                        {element.textUpperCase
-                          ? element.textCaptionHighlight.toUpperCase()
-                          : element.textCaptionHighlight}
-                      </span>
-                    </h4>
-                    <h3 className="display-6 text-light fw-bold mb-3">
-                      {element.textUpperCase
-                        ? element.staticText.toUpperCase()
-                        : element.staticText + " "}
-                    </h3>
-                    <p className="card-text fs-6 text-secondary">{element.blockText}</p>
-                    <Link to={element.linkURL} style={{ textDecoration: "none" }}>
-                      <p className="card-text fs-6 active-color">
-                        {element.linkName}
-                        <Icon
-                          path={element.linkIcon}
-                          size={1}
-                          color="#378CE7"
-                          className="mx-1 p-1"
-                        />
-                      </p>
-                    </Link>
+      <div
+        className="card"
+        style={{
+          width: "100%",
+          borderRadius: "0px",
+          margin: "0px",
+          border: "none",
+          overflow: "auto",
+        }}
+      >
+        <div className="container">
+          <div className="row my-4">
+            {props.service.map((card, index) => (
+              <div key={index} className="col-md-6 my-3">
+                <div className="card bg-light border-0 rounded-0 shadow-lg overflow-hidden card-hover-animation">
+                  <div className="row no-gutters">
+                    <div className="col-md-4">
+                      <img
+                        src={card.img}
+                        className="card-img rounded-0 p-4"
+                        alt="..."
+                        style={{ background: "#E6E6E6", height: "100%" }}
+                      />
+                    </div>
+                    <div className="col-md-8">
+                      <div className="card-body text-start">
+                        <h5 className="card-title fw-bold text-uppercase fs-4">{card.title}</h5>
+                        <p className="card-text my-4 text-secondary fs-6 description-lines">{card.description}</p>
+
+                        <Link to={card.linkURL} style={{ textDecoration: "none" }}>
+                          <p className="card-text fs-6 active-color">
+                            {card.linkName}
+                            <Icon
+                              path={card.linkIcon}
+                              size={1}
+                              color="#378CE7"
+                              className="mx-1 p-1"
+                            />
+                          </p>
+                        </Link>
+                      </div>
+                    </div>
                   </div>
-                  <img src={element.img} className="card-img-bottom" alt="..." />
                 </div>
               </div>
             ))}
           </div>
-          <button
-            className="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="prev"
-          >
-            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span className="visually-hidden">Previous</span>
-          </button>
-          <button
-            className="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="next"
-          >
-            <span className="carousel-control-next-icon" aria-hidden="true"></span>
-            <span className="visually-hidden">Next</span>
-          </button>
         </div>
       </div>
     </>

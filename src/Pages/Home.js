@@ -1,21 +1,22 @@
 import React from "react";
-import HeadSection from "../Components/HeadSection";
 import BodySection1 from "../Components/BodySection1";
 import cardbg2 from "../Static/main1.png";
 import cardbg3 from "../Static/main2.svg";
 import BodySection2 from "../Components/BodySection2";
-import cardbg1 from "../Static/cardbg1.jpg";
+import cardbg1 from "../Static/bg2.png";
+import HeadSection2 from "../Components/HeadSection2";
 
 export default function Home() {
   const headSection1 = {
-    textCaption: "Where are ",
-    textCaptionHighlight: " We ?",
-    staticText: "Stay secure round-the-clock , Protecting Your Digital Realm Uninterruptedly",
-    textOptions: true,
-    textUpperCase: true,
+    textCaption: "Secure Your Future: ",
+    textCaptionHighlight: "Simplified Cybersecurity Solutions",
+    staticText: "Trusted Security Operations.",
+    highlightText: "Fearless Innovation.",
+    textUpperCase: false,
     btnOptions: true,
     textAlign: "start",
-    height: "100%",
+    height: "75vh",
+    width: "45vw",
     content:
       "Simplifying cybersecurity precision. Our budget-friendly pen tests fortify your digital world, empowering business growth and safety. Join us , where security challenges transform into growth opportunities. Experience the fastest, most affordable solutions for compliance and year-round asset security.",
     cardbg1: cardbg1,
@@ -41,7 +42,7 @@ export default function Home() {
   };
   return (
     <div>
-      <HeadSection head={headSection1}/>
+      <HeadSection2 head={headSection1} />
       <BodySection1 body={bodySection1} />
       <BodySection2 body={bodySection2} />
     </div>
