@@ -2,9 +2,18 @@ import React from "react";
 import BodySection1 from "../Components/BodySection1";
 import cardbg2 from "../Static/main1.png";
 import cardbg3 from "../Static/main2.svg";
-import BodySection2 from "../Components/BodySection2";
+import chart1 from "../Static/action-charts/line.png";
+import chart2 from "../Static/action-charts/pie.png";
 import cardbg1 from "../Static/bg2.png";
+import line from "../Static/action-charts/lin2.png";
+import crest from "../Static/certificates/crest.jpg";
+import ina from "../Static/certificates/ine.png";
+import ec from "../Static/certificates/ec-council.png";
 import HeadSection2 from "../Components/HeadSection2";
+import { mdiBookArrowRight, mdiArrowRight, mdiCheckCircle } from "@mdi/js";
+import ActionableReports from "../Components/ActionableReports";
+import Certifications from "../Components/Certifications";
+import Blogs from "../Components/Blogs";
 
 export default function Home() {
   const headSection1 = {
@@ -20,29 +29,76 @@ export default function Home() {
     cardbg1: cardbg1,
   };
   const bodySection1 = {
-    img1: cardbg2,
-    title1: "Empower Your Business through Enhanced Cybersecurity Excellence! ",
-    block11:
-      "Unlock your businesss full potential with a fortified cybersecurity stance. Our comprehensive solutions and strategic insights enable confident navigation of the digital landscape. Strengthen defenses, safeguard data, and ensure seamless operations for heightened cyber resilience. Take charge of your digital destiny, fostering growth with a robust cybersecurity foundation.",
-    block12:
-      "At GANA SEC, our mission is to revolutionize cybersecurity by providing accessible, comprehensive solutions that empower organizations to protect their digital assets with confidence. We strive to simplify the complex landscape of cybersecurity, making it practical, affordable, and effective for businesses of all sizes. With our commitment to innovation and accessibility, we are reshaping the cybersecurity industry, ensuring that every organization, regardless of size, can navigate the digital realm securely and confidently.",
-
-    img2: cardbg3,
-    title2: "Everything you need to be secure, and stay that way! ",
-    block21:
+    img: line,
+    title: "Ready to up-level your offensive security? ",
+    block1:
       "From robust threat assessments to cutting-edge intrusion detection, our Hackcura team delivers a tailored approach that aligns seamlessly with your organization security goals. We provide proactive monitoring, rapid incident response, and continuous innovation, assuring your data integrity and business continuity. With a holistic view of cybersecurity under our roof, you can focus on growth, knowing you have a steadfast guardian for your digital realm.",
+    pointIcon: mdiCheckCircle,
+    points: [
+      "Cybersecurity risk score",
+      "Resources for remediation",
+      "Remediation report included",
+    ],
   };
-  const bodySection2 = {
-    title: "You are in Good Hands , We are proud early risers !!",
-    block1: { text: "VULNERABILITIES SUBMITTED", value: "50" },
-    block2: { text: "ACTIVE MONTHLY ENGAGEMENTS", value: "20" },
-    block3: { text: "FLEXIBLE PENTESTS WITHIN 24 HRS", value: "24" },
+  const actionReports = {
+    title: "Actionable Reporting",
+    description:
+      "Our pentest report format is easy to understand and will give you all the information you need to secure your environment. We’ll provide a customized plan of action to help you combat any vulnerabilities, prioritized based on severity, and improve your security posture.",
+    btnName: "Examaple sample reports",
+    btnIcon: mdiBookArrowRight,
+    btnURL: "",
+    images: [chart1, chart2],
+    pointIcon: mdiArrowRight,
+    points: [
+      "Cybersecurity risk score",
+      "Resources for remediation",
+      "Remediation report included",
+    ],
   };
+  const blogsSection = {
+    title: "Latest Blogs Post",
+    description:
+      "We have been making offensive cybersecurity blogs and would love to share our knowledge with you!",
+    list: [
+      {
+        title: "Blog Title 1",
+        description:
+          "Description of Blog 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+        image: cardbg1,
+        linkURL: "https://your-blog-url-1.com",
+        linkIcon: mdiArrowRight,
+      },
+      {
+        title: "Blog Title 2",
+        description:
+          "Description of Blog 2. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        image: cardbg2,
+        linkURL: "https://your-blog-url-2.com",
+        linkIcon: mdiArrowRight,
+      },
+      {
+        title: "Blog Title 3",
+        description:
+          "Description of Blog 3. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        image: cardbg3,
+        linkURL: "https://your-blog-url-3.com",
+        linkIcon: mdiArrowRight,
+      },
+    ],
+  };
+  const certificateSection = {
+    title: "Pentesting and Security Certifications & Awards",
+    description: "",
+    list: [{ image: crest }, { image: ina }, { image: crest }, { image: ec }, { image: ina }],
+  };
+
   return (
     <div>
       <HeadSection2 head={headSection1} />
       <BodySection1 body={bodySection1} />
-      <BodySection2 body={bodySection2} />
+      <ActionableReports reports={actionReports} />
+      <Certifications certificates={certificateSection} />
+      <Blogs blogs={blogsSection} />
     </div>
   );
 }

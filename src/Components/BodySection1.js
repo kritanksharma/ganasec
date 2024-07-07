@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import Icon from "@mdi/react";
-import { mdiCubeScan, mdiGestureTapButton } from "@mdi/js";
+import { mdiQrcodeScan, mdiOpenInNew } from "@mdi/js";
 import ConnectSection from "./ConnectSection";
 import { Link } from "react-router-dom";
 import AnimateBlock from "./AnimateBlock";
-export default function BodySection1(props) {
+export default function BodySection1({body}) {
   const [connectState, setConnectState] = useState(false);
   const connectHandler = () => {
     setConnectState(!connectState);
@@ -14,61 +14,51 @@ export default function BodySection1(props) {
       <div className="card w-100 px-3 text-start" style={{ border: "none", borderRadius: "0px" }}>
         <div className="row g-0">
           <div className="col-md-4">
-            {props.body.img1 && (
+            {body.img && (
               <AnimateBlock animationClass="slide-backward">
+                <div className="text-start content-to-animate">
                 <img
-                  src={props.body.img1}
-                  className="img-fluid rounded-start my-3 content-to-animate`"
+                  src={body.img}
+                  className="img-fluid mt-5 rounded-start"
                   alt="..."
-                />
-              </AnimateBlock>
-            )}
-          </div>
-          <div className="col-md-8">
-            <div className="card-body my-3 py-4">
-              <h2 className="card-title fw-bold basic-color">{props.body.title1}</h2>
-              <AnimateBlock animationClass="slide-forward">
-                <p className="card-text my-3 fs-6 content-to-animate">{props.body.block11}</p>
-                <p className="card-text my-3 fs-6 content-to-animate">{props.body.block12}</p>
-              </AnimateBlock>
-            </div>
-          </div>
-        </div>
-        <div className="row g-0">
-          <div className="col-md-4">
-            {props.body.img2 && (
-              <AnimateBlock animationClass="slide-backward">
-                <img
-                  src={props.body.img2}
-                  className="img-fluid rounded-start mb-4 content-to-animate"
-                  alt="..."
-                  style={{height:props.body.height2 , width:props.body.width2}}
-                />
+                  style={{height:body.height , width:body.width}}
+                /></div>
               </AnimateBlock>
             )}
           </div>
 
           <div className="col-md-8">
             <div className="card-body my-3 py-4">
-              <h2 className="card-title fw-bold basic-color">{props.body.title2}</h2>
+              <h2 className="card-title fw-medium basic-color display-5">{body.title}</h2>
               <AnimateBlock animationClass="slide-forward">
-                <p className="card-text my-3 fs-6 content-to-animate">{props.body.block21}</p>
-                <p className="card-text my-3 fs-6 content-to-animate">{props.body.block22}</p>
+                <p className="card-text mt-5 fs-6 content-to-animate fs-6 text-secondary">{body.block1}</p>
+                <p className="card-text mt-5 fs-6 content-to-animate fs-6 text-secondary">{body.block2}</p>
+                {body.points &&
+                 body.points.map((point, index) => (
+                    <div key={index}>
+                      <div className="text-start">
+                        <p className="fs-6 content-to-animate fs-6 basic-color">
+                        <Icon path={body.pointIcon} size={1} color="#50C878"  />
+                        <span className="mx-2">{point} </span> 
+                          </p>
+                      </div>
+                    </div>
+                  ))}
               </AnimateBlock>
 
               <Link to="/penetration">
-                <button type="button" className="btn btn-primary btn-custom basic-color m-2 mt-3">
-                  <Icon path={mdiCubeScan} size={1} color="#222222" />
-                  <span className="mx-2">Penetration Testing</span>
+                <button type="button" className="btn btn-outline-primary btn-outline-custom basic-color m-2 mt-3">
+                  <Icon path={mdiQrcodeScan} size={1} color="#222222" />
+                  <span className="mx-2">Schedule Pentest</span>
                 </button>
               </Link>
               <button
                 type="button"
-                className="btn btn-outline-secondary basic-color m-2 mt-3"
+                className="btn btn-warning m-2 basic-color mt-3"
                 onClick={connectHandler}
               >
-                <Icon path={mdiGestureTapButton} size={1} color="#222222" className="p-1" />
-                <span className="mx-2">Let's Connect</span>
+                <span className="ml-2">Connect with Us </span>
+                <Icon path={mdiOpenInNew} size={1} color="#222222" className="p-1" />
               </button>
             </div>
           </div>

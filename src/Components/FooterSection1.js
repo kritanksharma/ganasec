@@ -6,7 +6,7 @@ export default function FooterSection1(props) {
   return (
     <div
       id="footer"
-      className="card w-100 bg-light"
+      className="card w-100 bg-light p-3"
       style={{
         height: "100%",
         borderRadius: "0px",

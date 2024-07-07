@@ -138,6 +138,10 @@
   animation: slide-left 1s;
   animation-fill-mode: forwards;
 }
+.card-focus-animation:hover {
+  background-color: #36454F;
+  background-image: linear-gradient(#d3d3d3, #36454F);
+}
 
 @keyframes slide-left {
   from {

@@ -1,14 +1,15 @@
 import React from "react";
-import { mdiOpenInNew } from "@mdi/js";
+import { mdiBookArrowRight, mdiArrowRight, mdiOpenInNew } from "@mdi/js";
 import service1 from "../Static/services/app-window.svg";
 import service2 from "../Static/services/cloud-lock.svg";
 import service3 from "../Static/services/netkwork.svg";
 import service4 from "../Static/services/qrcode.svg";
+import chart1 from "../Static/action-charts/line.png";
+import chart2 from "../Static/action-charts/pie.png";
 import ServiceSection from "../Components/ServiceSection";
 import cardbg1 from "../Static/cardbg1.jpg";
-import cardbg2 from "../Static/fingerprint.png";
 import HeadSection from "../Components/HeadSection";
-import BodySection1 from "../Components/BodySection1";
+import ActionableReports from "../Components/ActionableReports";
 export default function Services() {
   const headSection1 = {
     textCaption: "What we can ",
@@ -58,21 +59,26 @@ export default function Services() {
       img: service4,
     },
   ];
-  const bodySection1 = {
-    img2: cardbg2,
-    title2: "The faster path to better security ! ",
-    block21:
-      "A one-of-a-kind, single pane of glass platform to easily manage all your cybersecurity solutions centrally, with a fully-managed and crowd-powered approach .",
-      block22:
-      "At GANA SEC, our mission is to revolutionize cybersecurity by providing accessible, comprehensive solutions that empower organizations to protect their digital assets with confidence. We strive to simplify the complex landscape of cybersecurity, making it practical, affordable, and effective for businesses of all sizes. With our commitment to innovation and accessibility, we are reshaping the cybersecurity industry, ensuring that every organization, regardless of size, can navigate the digital realm securely and confidently.",
-    height2 : '400px',
-    width2 : '800px'
+  const actionReports = {
+    title: "Actionable Reporting",
+    description:
+      "Our pentest report format is easy to understand and will give you all the information you need to secure your environment. We’ll provide a customized plan of action to help you combat any vulnerabilities, prioritized based on severity, and improve your security posture.",
+    btnName: "Examaple sample reports",
+    btnIcon: mdiBookArrowRight,
+    btnURL: "",
+    images: [chart1, chart2],
+    pointIcon: mdiArrowRight,
+    points: [
+      "Cybersecurity risk score",
+      "Resources for remediation",
+      "Remediation report included",
+    ],
   };
   return (
     <>
       <HeadSection head={headSection1} />
       <ServiceSection service={serviceSection} />
-      <BodySection1 body={bodySection1} />
+      <ActionableReports reports={actionReports} />
     </>
   );
 }
