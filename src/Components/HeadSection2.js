@@ -14,7 +14,7 @@ export default function HeadSection2(props) {
         style={{
           backgroundColor: "black",
           width: "100%",
-          height: "100%",
+          height: "800px",
           borderRadius: "0px",
         }}
       >

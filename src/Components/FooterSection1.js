@@ -28,7 +28,7 @@ export default function FooterSection1(props) {
                   />
                   <b>{props.footer.title}</b>
                 </h4>
-                <p className="fs-6">
+                <p className="fs-6 px-3">
                   <small>{props.footer.block}</small>
                 </p>
                 <p className="p-1 bg-light">

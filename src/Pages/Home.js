@@ -1,7 +1,5 @@
 import React from "react";
 import BodySection1 from "../Components/BodySection1";
-import cardbg2 from "../Static/main1.png";
-import cardbg3 from "../Static/main2.svg";
 import chart1 from "../Static/action-charts/line.png";
 import chart2 from "../Static/action-charts/pie.png";
 import cardbg1 from "../Static/bg2.png";
@@ -10,6 +8,7 @@ import crest from "../Static/certificates/crest.jpg";
 import ina from "../Static/certificates/ine.png";
 import ec from "../Static/certificates/ec-council.png";
 import HeadSection2 from "../Components/HeadSection2";
+import blog from "../Static/blockquote.svg";
 import { mdiBookArrowRight, mdiArrowRight, mdiCheckCircle } from "@mdi/js";
 import ActionableReports from "../Components/ActionableReports";
 import Certifications from "../Components/Certifications";
@@ -56,7 +55,9 @@ export default function Home() {
     ],
   };
   const blogsSection = {
-    title: "Latest Blogs Post",
+    badge:"Latest Posts" ,
+    title: "Stay on top of industry news and trends",
+    caption : "The latest thinking in offensive security !!",
     description:
       "We have been making offensive cybersecurity blogs and would love to share our knowledge with you!",
     list: [
@@ -64,7 +65,7 @@ export default function Home() {
         title: "Blog Title 1",
         description:
           "Description of Blog 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-        image: cardbg1,
+        image: blog,
         linkURL: "https://your-blog-url-1.com",
         linkIcon: mdiArrowRight,
       },
@@ -72,7 +73,7 @@ export default function Home() {
         title: "Blog Title 2",
         description:
           "Description of Blog 2. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        image: cardbg2,
+        image: blog,
         linkURL: "https://your-blog-url-2.com",
         linkIcon: mdiArrowRight,
       },
@@ -80,7 +81,7 @@ export default function Home() {
         title: "Blog Title 3",
         description:
           "Description of Blog 3. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-        image: cardbg3,
+        image: blog,
         linkURL: "https://your-blog-url-3.com",
         linkIcon: mdiArrowRight,
       },
