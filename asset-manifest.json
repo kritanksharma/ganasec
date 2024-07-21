@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/ganasec/static/css/main.fccd3c2a.css",
-    "main.js": "/ganasec/static/js/main.f12e9853.js",
+    "main.js": "/ganasec/static/js/main.80acb516.js",
     "static/js/453.4973b179.chunk.js": "/ganasec/static/js/453.4973b179.chunk.js",
+    "static/media/bg2.png": "/ganasec/static/media/bg2.e778e60d0006654186aa.png",
     "static/media/cardbg1.jpg": "/ganasec/static/media/cardbg1.ffd78d1bc3d2c0d18425.jpg",
     "static/media/crest.jpg": "/ganasec/static/media/crest.3aaacf0154a67384d96f.jpg",
     "static/media/logo.png": "/ganasec/static/media/logo.a72246e2f48cfd68e9ee.png",
-    "static/media/bg2.png": "/ganasec/static/media/bg2.8f405eda74b469a953e1.png",
     "static/media/lin2.png": "/ganasec/static/media/lin2.54394e826029ecb509a5.png",
     "static/media/connect.png": "/ganasec/static/media/connect.328b2fa24492c78944c1.png",
     "static/media/error.png": "/ganasec/static/media/error.6bd8d473146f46adb9c6.png",
@@ -29,11 +29,11 @@
     "static/media/blockquote.svg": "/ganasec/static/media/blockquote.05671bd831c6ea4cc1026880151bc017.svg",
     "static/media/app-window.svg": "/ganasec/static/media/app-window.d4f5a8c433cbc383490c8a698c743edb.svg",
     "main.fccd3c2a.css.map": "/ganasec/static/css/main.fccd3c2a.css.map",
-    "main.f12e9853.js.map": "/ganasec/static/js/main.f12e9853.js.map",
+    "main.80acb516.js.map": "/ganasec/static/js/main.80acb516.js.map",
     "453.4973b179.chunk.js.map": "/ganasec/static/js/453.4973b179.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fccd3c2a.css",
-    "static/js/main.f12e9853.js"
+    "static/js/main.80acb516.js"
   ]
 }
