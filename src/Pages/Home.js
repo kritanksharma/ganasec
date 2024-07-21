@@ -26,12 +26,13 @@ export default function Home() {
     content:
       "Simplifying cybersecurity precision. Our budget-friendly pen tests fortify your digital world, empowering business growth and safety. Join us , where security challenges transform into growth opportunities. Experience the fastest, most affordable solutions for compliance and year-round asset security.",
     cardbg1: cardbg1,
+    height: '65vh', 
   };
   const bodySection1 = {
     img: line,
     title: "Ready to up-level your offensive security? ",
     block1:
-      "From robust threat assessments to cutting-edge intrusion detection, our Hackcura team delivers a tailored approach that aligns seamlessly with your organization security goals. We provide proactive monitoring, rapid incident response, and continuous innovation, assuring your data integrity and business continuity. With a holistic view of cybersecurity under our roof, you can focus on growth, knowing you have a steadfast guardian for your digital realm.",
+      "From robust threat assessments to cutting-edge intrusion detection, our GanaSec team delivers a tailored approach that aligns seamlessly with your organization security goals. We provide proactive monitoring, rapid incident response, and continuous innovation, assuring your data integrity and business continuity. With a holistic view of cybersecurity under our roof, you can focus on growth, knowing you have a steadfast guardian for your digital realm.",
     pointIcon: mdiCheckCircle,
     points: [
       "Cybersecurity risk score",
@@ -43,9 +44,9 @@ export default function Home() {
     title: "Actionable Reporting",
     description:
       "Our pentest report format is easy to understand and will give you all the information you need to secure your environment. We’ll provide a customized plan of action to help you combat any vulnerabilities, prioritized based on severity, and improve your security posture.",
-    btnName: "Examaple sample reports",
+    btnName: "Example sample reports",
     btnIcon: mdiBookArrowRight,
-    btnURL: "",
+    btnURL: "/penetration",
     images: [chart1, chart2],
     pointIcon: mdiArrowRight,
     points: [

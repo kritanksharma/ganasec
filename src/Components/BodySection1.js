@@ -31,8 +31,8 @@ export default function BodySection1({body}) {
             <div className="card-body my-3 py-4">
               <h2 className="card-title fw-medium basic-color display-5">{body.title}</h2>
               <AnimateBlock animationClass="slide-forward">
-                <p className="card-text mt-5 fs-6 content-to-animate fs-6 text-secondary">{body.block1}</p>
-                <p className="card-text mt-5 fs-6 content-to-animate fs-6 text-secondary">{body.block2}</p>
+                <p className="card-text mt-5 fs-6 content-to-animate fs-6 text-secondary" style={{textAlign: 'justify'}}>{body.block1}</p>
+                <p className="card-text mt-5 fs-6 content-to-animate fs-6 text-secondary" style={{textAlign: 'justify'}}>{body.block2}</p>
                 {body.points &&
                  body.points.map((point, index) => (
                     <div key={index}>

@@ -17,7 +17,7 @@ export default function About() {
     height: "300px",
     btnOptions: false,
     content:
-      "Simplifying cybersecurity precision. Our budget-friendly pen tests fortify your digital world, empowering business growth and safety.",
+      "Why GanaSec ? Because we combine passionate cybersecurity experts with a relentless mission to secure your digital world. Meet our team - the masterminds behind our innovative strategies. We're driven by a shared commitment to staying ahead of threats and empowering your business with unwavering security.",
     cardbg1: cardbg1,
   };
   const teamSection1 = {
@@ -25,10 +25,9 @@ export default function About() {
     title: " The Gana Sec ",
     titleHighlight: "Story",
     subtitle: "Learn more about Gana Sec's founders",
-    description1:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    description2:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    description1: " seasoned security engineer with a proven track record in building robust application security programs for startups and unicorns like BlockFi and Klar. At Klar, he led AppSec program and strengthen security measures. His tenure at BlockFi offered deep insights into large-scale cyber defense operations. Additionally, Subhajit has collaborated with Google India and has apprenticed with various organizations, bringing a wealth of expertise to his role.",
+    description2: " seasoned security researcher specializing in ASM and EASM management, as well as vulnerability analysis and research. His tenure at various companies has provided him with deep insights into research and management. Additionally, Ashish has been active in the Bug Bounty community for over 9 years, securing hundreds of organizations. His extensive experience and dedication bring a wealth of expertise to his role.",
+    description3 : " seasoned security researcher specializing in ASM and EASM management, as well as vulnerability analysis and research. His tenure at various companies has provided him with deep insights into research and management. Additionally, Ashish has been active in the Bug Bounty community for over 9 years, securing hundreds of organizations. His extensive experience and dedication bring a wealth of expertise to his role.",
     storyLink: "",
     leaders: [
       {
@@ -59,7 +58,7 @@ export default function About() {
     img: line,
     title: "Ready to up-level your offensive security? ",
     block1:
-      "From robust threat assessments to cutting-edge intrusion detection, our Hackcura team delivers a tailored approach that aligns seamlessly with your organization security goals. We provide proactive monitoring, rapid incident response, and continuous innovation, assuring your data integrity and business continuity. With a holistic view of cybersecurity under our roof, you can focus on growth, knowing you have a steadfast guardian for your digital realm.",
+      "GanaSec safeguards your business with a customized cybersecurity strategy. Our experts conduct thorough threat assessments and utilize cutting-edge intrusion detection to seamlessly align with your organization's security needs. We continuously innovate to ensure your data's integrity and business continuity through proactive monitoring and rapid response to any incidents. With GanaSec's holistic cybersecurity approach, you can focus on growth, knowing your digital realm has a steadfast guardian.",
     pointIcon: mdiCheckCircle,
     points: [
       "Cybersecurity risk score",

@@ -14,7 +14,6 @@ export default function HeadSection2(props) {
         style={{
           backgroundColor: "black",
           width: "100%",
-          height: "800px",
           borderRadius: "0px",
         }}
       >
@@ -44,13 +43,13 @@ export default function HeadSection2(props) {
                 </h3>
               </AnimateBlock>
               <AnimateBlock animationclassName="slide-upward">
-                <p className="card-text fs-6 text-secondary content-to-animate subtext">
+                <p className="card-text fs-6 text-secondary content-to-animate subtext" style={{textAlign: 'justify'}}>
                   {props.head.content}
                 </p>
                 {props.head.btnOptions && (
                   <div className="content-to-animate my-5">
                     <Link to="/penetration">
-                      <button type="button" className="btn btn-primary btn-custom m-2 mt-3">
+                      <button type="button" className="btn btn-primary btn-custom m-2 mt-3" style={{ width: '250px' }} >
                         <Icon path={mdiCubeScan} size={1} color="#FFFFFF" />
                         <span className="mx-2">Penetration Testing</span>
                       </button>
@@ -59,9 +58,10 @@ export default function HeadSection2(props) {
                       <button
                         type="button"
                         className="btn btn-outline-primary btn-outline-custom m-2 mt-3"
+                        style={{ width: '250px' }}
                       >
                         <Icon path={mdiCogs} size={1} className="primary" />
-                        <span className="mx-2">Try few Vunerablity Tools</span>
+                        <span className="mx-2">Try Vunerablity Tools</span>
                       </button>
                     </Link>
                   </div>

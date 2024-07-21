@@ -14,14 +14,14 @@ export default function Services() {
   const headSection1 = {
     textCaption: "What we can ",
     textCaptionHighlight: "provide?",
-    staticText: "Comprehensive offensive security .",
+    staticText: "Comprehensive offensive security.",
     textOptions: false,
     textUpperCase: false,
     textAlign: "start",
     height: "250px",
     btnOptions: false,
     content:
-      "Enhance your agility and accelerate innovation by gaining real risk insights with on-demand security resources. Cobalt enables a scalable response and risk remediation without the need to expand your workforce. With our comprehensive approach, you can address current challenges and adapt for future demands.",
+      "Every business faces unique security challenges. GanaSec offers a comprehensive suite of cybersecurity services, tailored to address your specific needs. From in-depth penetration testing to proactive threat monitoring, we help you identify and address vulnerabilities before they become breaches.",
     cardbg1: cardbg1,
   };
   const serviceSection = [
@@ -65,7 +65,7 @@ export default function Services() {
       "Our pentest report format is easy to understand and will give you all the information you need to secure your environment. We’ll provide a customized plan of action to help you combat any vulnerabilities, prioritized based on severity, and improve your security posture.",
     btnName: "Examaple sample reports",
     btnIcon: mdiBookArrowRight,
-    btnURL: "",
+    btnURL: "/penetration",
     images: [chart1, chart2],
     pointIcon: mdiArrowRight,
     points: [

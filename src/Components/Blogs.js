@@ -17,7 +17,7 @@ export default function Blogs({ blogs }) {
           <div key={index} className="col-md-2 my-2">
              <div
                 className="card bg-light border-1 shadow-lg overflow-hidden card-hover-animation"
-                style={{ border: "none" , width : "380px" }}
+                style={{ border: "none" , minWidth : "350px" }}
               >
               <img src={blog.image} className="card-img-top" alt={blog.title}  style={{ background: "#E6E6E6" }} />
               <div className="card-body">

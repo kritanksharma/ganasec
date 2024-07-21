@@ -28,7 +28,7 @@ export default function Works() {
     height: "250px",
     btnOptions: false,
     content:
-      " Our unwavering dedication to collaboration, customer-centricity, and security serves as the guiding force behind every endeavor we undertake.",
+      "Worried about hidden security weaknesses? GanaSec's got you covered. We uncover vulnerabilities in your systems through in-depth testing, then provide a clear roadmap to fortify your defenses. With GanaSec, you'll gain the insights and tools needed to confidently secure your digital environment.",
     cardbg1: cardbg1,
   };
   const timelineInfo = [
