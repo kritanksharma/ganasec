@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 export default function TeamSection({ teams }) {
   return (
     <div
-      className="card bg-dark text-light"
+      className="card bg-dark text-light p-3"
       style={{
         width: "100%",
         borderRadius: "0px",
@@ -16,7 +16,7 @@ export default function TeamSection({ teams }) {
       }}
     >
       <div className="container">
-        <h1 className="card-title fw-medium display-5 my-5">
+        <h1 className="card-title fw-medium display-5 my-2">
           <span> {teams.title}</span>
           <span className="active-color"> {teams.titleHighlight}</span>
         </h1>
@@ -29,7 +29,7 @@ export default function TeamSection({ teams }) {
             <div className="col-md-2 my-2 text-start" key={index}>
               <div
                 className="card bg-light border-0 shadow-lg overflow-hidden card-hover-animation"
-                style={{ border: "none", minWidth: "280px" }}
+                style={{ border: "none", minWidth: "350px" }}
               >
                 <img
                   src={element.photo}
@@ -54,27 +54,36 @@ export default function TeamSection({ teams }) {
           ))}
         </div>
         <div className="row my-4">
-          <p className="col-md-6 text-start">
-            <span className="active-color">{teams.leaders[0].name}-</span>
-            {teams.description1}
-          </p>
-          <p className="col-md-6 text-start">
-            <span className="active-color">{teams.leaders[1].name}-</span>
-            {teams.description2}
-          </p>
-          <p className="col-md-6 text-start">
-            <span className="active-color">{teams.leaders[1].name}-</span>
-            {teams.description3}
-          </p>
-          <p className="col-md-6 text-start">
-            {teams.description4}
-            <Link to={teams.storyLink} style={{ textDecoration: "none" }}>
-              <p className="card-text fs-6 active-color btn-link">
-                Read More
-                <Icon path={mdiOpenInNew} size={1} color="#378CE7" className="mx-1 p-1" />
-              </p>
-            </Link>
-          </p>
+          {teams.description1 && (
+            <p className="col-md-6 text-start">
+              <span className="active-color">
+                {teams.description1 ? teams.leaders[0].name + "-" : ""}
+              </span>
+              {teams.description1}
+            </p>
+          )}
+          {teams.description2 && (
+            <p className="col-md-6 text-start">
+              <span className="active-color">
+                {teams.description2 ? teams.leaders[1].name + "-" : ""}
+              </span>
+              {teams.description2}
+            </p>
+          )}
+          {teams.description3 && (
+            <p className="col-md-6 text-start">
+              <span className="active-color">
+                {teams.description3 ? teams.leaders[2].name + "-" : ""}
+              </span>
+              {teams.description3}
+              <Link to={teams.storyLink} style={{ textDecoration: "none" }}>
+                <span className="card-text fs-6 active-color btn-link mx-3">
+                  Read More
+                  <Icon path={mdiOpenInNew} size={1} color="#378CE7" className="mx-1 p-1" />
+                </span>
+              </Link>
+            </p>
+          )}
         </div>
       </div>
     </div>

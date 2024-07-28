@@ -20,7 +20,7 @@ export default function ChatBox(props) {
           </p>
           <p className="text-start">
             <u>
-              <a href="/">
+              <a href="#/penetration">
                 <span className="active-color">Explore More</span>
                 <span>
                   <Icon className="p-1 active-color" path={mdiOpenInNew} size={1} />

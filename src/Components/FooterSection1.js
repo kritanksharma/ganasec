@@ -2,6 +2,7 @@ import React from "react";
 import Icon from "@mdi/react";
 import logo from "../Static/logo6.png";
 import { mdiFacebook, mdiLinkedin, mdiTwitter, mdiPost, mdiYoutubeSubscription } from "@mdi/js";
+import { registerVersion } from "firebase/app";
 export default function FooterSection1(props) {
   return (
     <div
@@ -24,11 +25,11 @@ export default function FooterSection1(props) {
                     alt="GanaSec"
                     width="60"
                     height="60"
-                    className="justify-content-start h-3 mx-2"
+                    className="justify-content-start h-3"
                   />
                   <b>{props.footer.title}</b>
                 </h4>
-                <p className="fs-6 px-3">
+                <p className="fs-6" style={{paddingRight : '12px'}}>
                   <small>{props.footer.block}</small>
                 </p>
                 <p className="p-1 bg-light">

@@ -8,11 +8,11 @@ import crest from "../Static/certificates/crest.jpg";
 import ina from "../Static/certificates/ine.png";
 import ec from "../Static/certificates/ec-council.png";
 import HeadSection2 from "../Components/HeadSection2";
-import blog from "../Static/blockquote.svg";
+import blogImage from "../Static/blockquote.svg";
 import { mdiBookArrowRight, mdiArrowRight, mdiCheckCircle } from "@mdi/js";
 import ActionableReports from "../Components/ActionableReports";
 import Certifications from "../Components/Certifications";
-import Blogs from "../Components/Blogs";
+import MediumBlogs from "../Components/MediumBlogs";
 
 export default function Home() {
   const headSection1 = {
@@ -26,7 +26,7 @@ export default function Home() {
     content:
       "Simplifying cybersecurity precision. Our budget-friendly pen tests fortify your digital world, empowering business growth and safety. Join us , where security challenges transform into growth opportunities. Experience the fastest, most affordable solutions for compliance and year-round asset security.",
     cardbg1: cardbg1,
-    height: '65vh', 
+    height: "65vh",
   };
   const bodySection1 = {
     img: line,
@@ -56,37 +56,13 @@ export default function Home() {
     ],
   };
   const blogsSection = {
-    badge:"Latest Posts" ,
+    badge: "Latest Posts",
     title: "Stay on top of industry news and trends",
-    caption : "The latest thinking in offensive security !!",
+    caption: "The latest thinking in offensive security !!",
     description:
       "We have been making offensive cybersecurity blogs and would love to share our knowledge with you!",
-    list: [
-      {
-        title: "Blog Title 1",
-        description:
-          "Description of Blog 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-        image: blog,
-        linkURL: "https://your-blog-url-1.com",
-        linkIcon: mdiArrowRight,
-      },
-      {
-        title: "Blog Title 2",
-        description:
-          "Description of Blog 2. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        image: blog,
-        linkURL: "https://your-blog-url-2.com",
-        linkIcon: mdiArrowRight,
-      },
-      {
-        title: "Blog Title 3",
-        description:
-          "Description of Blog 3. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-        image: blog,
-        linkURL: "https://your-blog-url-3.com",
-        linkIcon: mdiArrowRight,
-      },
-    ],
+    image: blogImage,
+    linkIcon: mdiArrowRight,
   };
   const certificateSection = {
     title: "Pentesting and Security Certifications & Awards",
@@ -100,7 +76,7 @@ export default function Home() {
       <BodySection1 body={bodySection1} />
       <ActionableReports reports={actionReports} />
       <Certifications certificates={certificateSection} />
-      <Blogs blogs={blogsSection} />
+      <MediumBlogs blogs={blogsSection}></MediumBlogs>
     </div>
   );
 }

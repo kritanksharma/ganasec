@@ -3,7 +3,7 @@ import React from "react";
 export default function Certifications({ certificates }) {
   return (
     <div
-      className="card bg-light pb-5"
+      className="card bg-light p-4"
       style={{
         borderRadius: "0px",
         margin: "0px",
@@ -23,7 +23,7 @@ export default function Certifications({ certificates }) {
                 <img
                   src={element.image}
                   className="card-img-top"
-                  style={{ backgroundColor: "#E6E6E6" , height:"150px" }}
+                  style={{ backgroundColor: "#E6E6E6", height: "150px" }}
                   alt="..."
                 />
               </div>

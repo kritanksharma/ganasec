@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { collection, addDoc } from 'firebase/firestore';
+import { collection, addDoc } from "firebase/firestore";
 import { db } from "../firebase";
-import connectbg from '../Static/connect.png'
+import connectbg from "../Static/connect.png";
 
 export default function Form() {
   const [email, setEmail] = useState("");
@@ -24,7 +24,6 @@ export default function Form() {
     }
   };
 
- 
   const handleFormSubmit = async (e) => {
     e.preventDefault();
 
@@ -42,7 +41,7 @@ export default function Form() {
 
     try {
       // Add a new document to the 'users' collection
-      await addDoc(collection(db, 'users'), obj);
+      await addDoc(collection(db, "users"), obj);
 
       // Clear the input fields
       setEmail("");
@@ -67,73 +66,65 @@ export default function Form() {
   return (
     <>
       {complete === false ? (
-          <div className="card-body text-start">
-            <form>
-              <div className="mb-3">
-                <label htmlFor="email" className="form-label">
-                  Email address
-                </label>
-                <input
-                  type="email"
-                  className="form-control"
-                  id="email"
-                  aria-describedby="emailHelp"
-                  value={email}
-                  onChange={handleInputChange}
-                />
+        <div className="card-body text-start">
+          <form>
+            <div className="mb-3">
+              <label htmlFor="email" className="form-label">
+                Email address
+              </label>
+              <input
+                type="email"
+                className="form-control"
+                id="email"
+                aria-describedby="emailHelp"
+                value={email}
+                onChange={handleInputChange}
+              />
 
-                <div id="emailHelp" className="form-text">
-                  {emailError && (
-                    <div className="text-danger">{emailError}</div>
-                  )}
-                  We'll never share your email with anyone else.
-                </div>
+              <div id="emailHelp" className="form-text">
+                {emailError && <div className="text-danger">{emailError}</div>}
+                We'll never share your email with anyone else.
               </div>
-              <div className="mb-3">
-                <label htmlFor="subject" className="form-label">
-                  What is your security objective?
-                </label>
-                <input
-                  type="text"
-                  className="form-control"
-                  id="subject"
-                  value={subject}
-                  onChange={handleInputChange}
-                />
-              </div>
-              <div className="mb-3">
-                <label htmlFor="message" className="form-label">
-                  Message
-                </label>
-                <textarea
-                  type="text"
-                  rows="4"
-                  className="form-control"
-                  id="message"
-                  value={message}
-                  onChange={handleInputChange}
-                />
-              </div>
-              <button
-                type="submit"
-                disabled={!isEnable()}
-                className={`btn btn-${
-                  isEnable() ? "primary" : "primary"
-                } btn btn-custom m-2 `}
-                onClick={handleFormSubmit}
-              >
-                Submit
-              </button>
-            </form>
-          </div>
+            </div>
+            <div className="mb-3">
+              <label htmlFor="subject" className="form-label">
+                What is your security objective?
+              </label>
+              <input
+                type="text"
+                className="form-control"
+                id="subject"
+                value={subject}
+                onChange={handleInputChange}
+              />
+            </div>
+            <div className="mb-3">
+              <label htmlFor="message" className="form-label">
+                Message
+              </label>
+              <textarea
+                type="text"
+                rows="4"
+                className="form-control"
+                id="message"
+                value={message}
+                onChange={handleInputChange}
+              />
+            </div>
+            <button
+              type="submit"
+              disabled={!isEnable()}
+              className={`btn btn-${isEnable() ? "primary" : "primary"} btn btn-custom m-2 `}
+              onClick={handleFormSubmit}
+            >
+              Submit
+            </button>
+          </form>
+        </div>
       ) : null}
 
       {complete === true ? (
-        <img
-          src={connectbg}
-          alt="..."
-          style={{ width: "300px", height: "300px" }}
-        />
+        <img src={connectbg} alt="..." style={{ width: "300px", height: "300px" }} />
       ) : null}
     </>
   );

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import logo from "../Static/logo.png";
 import Icon from "@mdi/react";
-import { mdiCogs } from "@mdi/js";
+import { mdiCalendarEdit } from "@mdi/js";
 import { Link } from "react-router-dom";
 import "./styles.css"; // Import the CSS file
 import ConnectSection from "./ConnectSection";
@@ -15,7 +15,7 @@ export default function navBar(props) {
     <>
       <div>
         <nav
-          className="navbar navbar-expand-lg "
+          className="navbar navbar-expand-lg px-2"
           data-bs-theme="dark"
           style={{ backgroundColor: "black", border: "none" }}
         >
@@ -66,12 +66,16 @@ export default function navBar(props) {
               </ul>
               <ul className="d-flex navbar-nav fw-bold fs-6">
                 <li>
-                  <Link to="/inprogress" style={{ textDecoration: "none" }}>
-                    <button className="btn btn-outline-primary btn-outline-custom mx-2 d-flex justify-start">
-                      <Icon path={mdiCogs} size={1} className="primary" />
-                      <span className="mx-2">Try Tools for free</span>
-                    </button>
-                  </Link>
+                  <a
+                    href={process.env.REACT_APP_CAL_API}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn nav-link d-flex justify-start mx-2 "
+                    style={{ width: "200px" }}
+                  >
+                    <Icon path={mdiCalendarEdit} size={1} className="primary" />
+                    <span className="mx-2">Book a Call</span>
+                  </a>
                 </li>
               </ul>
             </div>

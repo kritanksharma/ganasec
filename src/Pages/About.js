@@ -25,9 +25,10 @@ export default function About() {
     title: " The Gana Sec ",
     titleHighlight: "Story",
     subtitle: "Learn more about Gana Sec's founders",
-    description1: " seasoned security engineer with a proven track record in building robust application security programs for startups and unicorns like BlockFi and Klar. At Klar, he led AppSec program and strengthen security measures. His tenure at BlockFi offered deep insights into large-scale cyber defense operations. Additionally, Subhajit has collaborated with Google India and has apprenticed with various organizations, bringing a wealth of expertise to his role.",
-    description2: " seasoned security researcher specializing in ASM and EASM management, as well as vulnerability analysis and research. His tenure at various companies has provided him with deep insights into research and management. Additionally, Ashish has been active in the Bug Bounty community for over 9 years, securing hundreds of organizations. His extensive experience and dedication bring a wealth of expertise to his role.",
-    description3 : " seasoned security researcher specializing in ASM and EASM management, as well as vulnerability analysis and research. His tenure at various companies has provided him with deep insights into research and management. Additionally, Ashish has been active in the Bug Bounty community for over 9 years, securing hundreds of organizations. His extensive experience and dedication bring a wealth of expertise to his role.",
+    description3:
+      " seasoned security engineer with a proven track record in building robust application security programs for startups and unicorns like BlockFi and Klar. At Klar, he led AppSec program and strengthen security measures. His tenure at BlockFi offered deep insights into large-scale cyber defense operations. Additionally, Subhajit has collaborated with Google India and has apprenticed with various organizations, bringing a wealth of expertise to his role.",
+    description2:
+      " seasoned security researcher specializing in ASM and EASM management, as well as vulnerability analysis and research. His tenure at various companies has provided him with deep insights into research and management. Additionally, Ashish has been active in the Bug Bounty community for over 9 years, securing hundreds of organizations. His extensive experience and dedication bring a wealth of expertise to his role.",
     storyLink: "",
     leaders: [
       {
