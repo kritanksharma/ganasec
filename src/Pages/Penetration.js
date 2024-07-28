@@ -35,7 +35,7 @@ export default function Penetration() {
         encodeURIComponent(subject) + "~ customized "
       }&body=I am interested to connect with you regarding customized pentest information & process.`,
       whatsapp:
-        "https://wa.me/916000279927?text=I am interested to connect for customized pentest with experts !!",
+        `${process.env.REACT_APP_WA_URL}?text=I am interested to connect for customized pentest with experts !!`,
     },
     {
       title: "Schedule a Scoping Call with our experts",
@@ -50,7 +50,7 @@ export default function Penetration() {
         encodeURIComponent(subject) + "~ self-guide"
       }&body=I am interested to connect with you regarding self-guide pentest information & process.`,
       whatsapp:
-        "https://wa.me/916000279927?text=I am interested to connect for self-guide pentest with experts !!",
+      `${process.env.REACT_APP_WA_URL}?text=I am interested to connect for self-guide pentest with experts !!`,
     },
   ];
 
