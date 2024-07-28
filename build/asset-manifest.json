@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ganasec/static/css/main.fccd3c2a.css",
-    "main.js": "/ganasec/static/js/main.3b5728ea.js",
+    "main.js": "/ganasec/static/js/main.fec5483c.js",
     "static/js/453.4973b179.chunk.js": "/ganasec/static/js/453.4973b179.chunk.js",
     "static/media/bg2.png": "/ganasec/static/media/bg2.e778e60d0006654186aa.png",
     "static/media/cardbg1.jpg": "/ganasec/static/media/cardbg1.ffd78d1bc3d2c0d18425.jpg",
@@ -29,11 +29,11 @@
     "static/media/blockquote.svg": "/ganasec/static/media/blockquote.05671bd831c6ea4cc1026880151bc017.svg",
     "static/media/app-window.svg": "/ganasec/static/media/app-window.d4f5a8c433cbc383490c8a698c743edb.svg",
     "main.fccd3c2a.css.map": "/ganasec/static/css/main.fccd3c2a.css.map",
-    "main.3b5728ea.js.map": "/ganasec/static/js/main.3b5728ea.js.map",
+    "main.fec5483c.js.map": "/ganasec/static/js/main.fec5483c.js.map",
     "453.4973b179.chunk.js.map": "/ganasec/static/js/453.4973b179.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fccd3c2a.css",
-    "static/js/main.3b5728ea.js"
+    "static/js/main.fec5483c.js"
   ]
 }
