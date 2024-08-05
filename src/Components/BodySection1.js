@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import Icon from "@mdi/react";
-import { mdiQrcodeScan, mdiOpenInNew } from "@mdi/js";
 import ConnectSection from "./ConnectSection";
 import { Link } from "react-router-dom";
 import AnimateBlock from "./AnimateBlock";
+import {mdiOpenInNew} from "@mdi/js";
 export default function BodySection1({ body }) {
   const [connectState, setConnectState] = useState(false);
   const connectHandler = () => {
@@ -19,7 +19,7 @@ export default function BodySection1({ body }) {
                 <div className="text-start content-to-animate">
                   <img
                     src={body.img}
-                    className="img-fluid mt-5 rounded-start"
+                    className="img-fluid mt-5 pt-3 rounded-start"
                     alt="..."
                     style={{ height: body.height, width: body.width }}
                   />
@@ -33,7 +33,7 @@ export default function BodySection1({ body }) {
               <h2 className="card-title fw-medium basic-color display-5">{body.title}</h2>
               <AnimateBlock animationClass="slide-forward">
                 <p
-                  className="card-text mt-5 fs-6 content-to-animate fs-6 text-secondary"
+                  className="card-text mt-3 fs-6 content-to-animate fs-6 text-secondary"
                   style={{ textAlign: "justify" }}
                 >
                   {body.block1}
@@ -57,21 +57,21 @@ export default function BodySection1({ body }) {
                   ))}
               </AnimateBlock>
 
-              <Link to="/penetration">
+              <Link to={body.btn.btnUrl}>
                 <button
                   type="button"
                   className="btn btn-outline-primary btn-outline-custom basic-color m-2 mt-3"
-                  style={{ width: "200px" }}
+                  style={{ width: "250px" }}
                 >
-                  <Icon path={mdiQrcodeScan} size={1} color="#222222" />
-                  <span className="mx-2">Schedule Pentest</span>
+                  <Icon path={body.btn.btnIcon} size={1} color="#222222" />
+                  <span className="mx-2">{body.btn.btnName}</span>
                 </button>
               </Link>
               <button
                 type="button"
                 className="btn btn-warning m-2 basic-color mt-3"
                 onClick={connectHandler}
-                style={{ width: "200px" }}
+                style={{ width: "250px" }}
               >
                 <span className="ml-2">Connect with Us </span>
                 <Icon path={mdiOpenInNew} size={1} color="#222222" className="p-1" />

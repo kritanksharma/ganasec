@@ -9,7 +9,7 @@ import ina from "../Static/certificates/ine.png";
 import ec from "../Static/certificates/ec-council.png";
 import HeadSection2 from "../Components/HeadSection2";
 import blogImage from "../Static/blockquote.svg";
-import { mdiBookArrowRight, mdiArrowRight, mdiCheckCircle } from "@mdi/js";
+import { mdiBookArrowRight, mdiArrowRight, mdiCheckCircle, mdiQrcodeScan } from "@mdi/js";
 import ActionableReports from "../Components/ActionableReports";
 import Certifications from "../Components/Certifications";
 import MediumBlogs from "../Components/MediumBlogs";
@@ -17,28 +17,34 @@ import MediumBlogs from "../Components/MediumBlogs";
 export default function Home() {
   const headSection1 = {
     textCaption: "Secure Your Future: ",
-    textCaptionHighlight: "Simplified Cybersecurity Solutions",
-    staticText: "Trusted Security Operations.",
-    highlightText: "Fearless Innovation.",
+    textCaptionHighlight: "Simplified Offensive Security Solutions",
+    staticText: "Stay Ahead of Threats,",
+    highlightText: "Innovate with Confidence.",
     textUpperCase: false,
     btnOptions: true,
     textAlign: "start",
     content:
-      "Simplifying cybersecurity precision. Our budget-friendly pen tests fortify your digital world, empowering business growth and safety. Join us , where security challenges transform into growth opportunities. Experience the fastest, most affordable solutions for compliance and year-round asset security.",
+      "Flexible, cost-effective penetration testing to help you achieve compliance and secure all your assets & stress free sprint releases.",
     cardbg1: cardbg1,
     height: "65vh",
   };
   const bodySection1 = {
     img: line,
-    title: "Ready to up-level your offensive security? ",
+    title: "Offensive Security across your entire Attack Surface !",
     block1:
-      "From robust threat assessments to cutting-edge intrusion detection, our GanaSec team delivers a tailored approach that aligns seamlessly with your organization security goals. We provide proactive monitoring, rapid incident response, and continuous innovation, assuring your data integrity and business continuity. With a holistic view of cybersecurity under our roof, you can focus on growth, knowing you have a steadfast guardian for your digital realm.",
+      "Proactively safeguard your assets with our trusted community of experts, helping you defend at scale. We test, validate, and assist in patching vulnerabilities. Enjoy flexible engagement options tailored to your needs .",
     pointIcon: mdiCheckCircle,
     points: [
-      "Cybersecurity risk score",
-      "Resources for remediation",
-      "Remediation report included",
+      "Flexible & On-Demand Pentests",
+      "Detailed Technical and Executive Reports",
+      "Support for Developers During Remediation",
+      "Unlimited Retesting",
     ],
+    btn: {
+      btnIcon: mdiQrcodeScan,
+      btnName: "Download Brocheure",
+      btnUrl: "/blog",
+    },
   };
   const actionReports = {
     title: "Actionable Reporting",
@@ -50,15 +56,15 @@ export default function Home() {
     images: [chart1, chart2],
     pointIcon: mdiArrowRight,
     points: [
-      "Cybersecurity risk score",
-      "Resources for remediation",
-      "Remediation report included",
+      "Detailed Technical Report & Proof of Concepts for the remediation",
+      "Detailed Executive Report according to compliance & needs",
+      "Insights for Developer Remediation",
+      "Get a Verifiable certificate",
     ],
   };
   const blogsSection = {
     badge: "Latest Posts",
     title: "Stay on top of industry news and trends",
-    caption: "The latest thinking in offensive security !!",
     description:
       "We have been making offensive cybersecurity blogs and would love to share our knowledge with you!",
     image: blogImage,
@@ -76,7 +82,7 @@ export default function Home() {
       <BodySection1 body={bodySection1} />
       <ActionableReports reports={actionReports} />
       <Certifications certificates={certificateSection} />
-      <MediumBlogs blogs={blogsSection}></MediumBlogs>
+      <MediumBlogs blogs={blogsSection} blogLimit="3" isShortPreview={true}></MediumBlogs>
     </div>
   );
 }

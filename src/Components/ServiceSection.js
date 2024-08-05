@@ -33,7 +33,9 @@ export default function ServiceSection(props) {
                     <div className="col-md-8">
                       <div className="card-body text-start">
                         <h5 className="card-title fw-bold text-uppercase fs-4">{card.title}</h5>
-                        <p className="card-text my-4 text-secondary fs-6 description-lines">{card.description}</p>
+                        <p className="card-text my-4 text-secondary fs-6 description-lines">
+                          {card.description}
+                        </p>
 
                         <Link to={card.linkURL} style={{ textDecoration: "none" }}>
                           <p className="card-text fs-6 active-color">

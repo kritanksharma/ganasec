@@ -1,8 +1,8 @@
 import React from "react";
 import { mdiBookArrowRight, mdiArrowRight, mdiOpenInNew } from "@mdi/js";
 import service1 from "../Static/services/app-window.svg";
-import service2 from "../Static/services/cloud-lock.svg";
-import service3 from "../Static/services/netkwork.svg";
+import service2 from "../Static/services/netkwork.svg";
+import service3 from "../Static/services/cloud-lock.svg";
 import service4 from "../Static/services/qrcode.svg";
 import chart1 from "../Static/action-charts/line.png";
 import chart2 from "../Static/action-charts/pie.png";
@@ -20,40 +20,35 @@ export default function Services() {
     textAlign: "start",
     height: "250px",
     btnOptions: false,
-    content:
-      "Every business faces unique security challenges. GanaSec offers a comprehensive suite of cybersecurity services, tailored to address your specific needs. From in-depth penetration testing to proactive threat monitoring, we help you identify and address vulnerabilities before they become breaches.",
+    content: "Penetration testing simulates attacks on your systems to find weaknesses before real hackers do. Itʼs crucial for preventing costly data breaches and financial losses. By catching these issues early, you protect your business from major security threats and safeguard your reputation.",
     cardbg1: cardbg1,
   };
   const serviceSection = [
     {
-      title: "Application Penetration",
-      description:
-        " We scrutinize every nook and cranny for vulnerabilities, offering clear, actionable insights and reports. Our process includes thorough testing and a free retest to ensure all fixes hold strong, keeping your online presence secure and seamless.",
+      title: "Application Pentest",
+      description: "We test your web and mobile applications to find security vulnerabilities, ensuring they are protected against potential attacks and data breaches.",
       linkName: "Read More",
       linkIcon: mdiOpenInNew,
       linkURL: "",
       img: service1,
     },
     {
-      title: "Cloud Security Audits",
-      description:
-        " Secure your cloud infrastructure with our specialized testing for both AWS and Azure environments. Ganasec identifies potential risks, providing straightforward solutions and detailed reports. Our approach ensures your cloud services remain fortified against threats, with the added assurance of free retests for ironclad security. ",
+      title: "Network & API Pentest",
+      description: "We evaluate the security of your network infrastructure and application APIs, identifying weaknesses that could be exploited to gain unauthorized access or disrupt operations. ",
       linkName: "Read More",
       linkIcon: mdiOpenInNew,
       img: service2,
     },
     {
-      title: "Network & API Pentration",
-      description:
-        "Ganasec’s mobile app penetration testing services safeguard your application from emerging threats. We test, identify, and help remediate vulnerabilities, offering comprehensive reports and the promise of free retests to keep your app secure in the ever-evolving digital landscape.",
+      title: "Cloud Security Pentest",
+      description: "We assess the security of your AWS or Azure cloud environments, checking for vulnerabilities and misconfigurations to safeguard your cloud resources and data.",
       linkName: "Read More",
       linkIcon: mdiOpenInNew,
       img: service3,
     },
     {
       title: "Source Code Review",
-      description:
-        "Ganasec’s mobile app penetration testing services safeguard your application from emerging threats. We test, identify, and help remediate vulnerabilities, offering comprehensive reports and the promise of free retests to keep your app secure in the ever-evolving digital landscape.",
+      description: "We analyze specific repositories or source code to identify security issues and vulnerabilities, providing recommendations to enhance code security and prevent exploitation.",
       linkName: "Read More",
       linkIcon: mdiOpenInNew,
       img: service4,

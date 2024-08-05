@@ -1,7 +1,6 @@
 import React from "react";
 import Icon from "@mdi/react";
-import { mdiLinkedin, mdiTwitter, mdiOpenInNew } from "@mdi/js";
-import { Link } from "react-router-dom";
+import { mdiLinkedin, mdiTwitter } from "@mdi/js";
 
 export default function TeamSection({ teams }) {
   return (
@@ -54,36 +53,25 @@ export default function TeamSection({ teams }) {
           ))}
         </div>
         <div className="row my-4">
-          {teams.description1 && (
-            <p className="col-md-6 text-start">
-              <span className="active-color">
-                {teams.description1 ? teams.leaders[0].name + "-" : ""}
-              </span>
-              {teams.description1}
-            </p>
-          )}
+          {teams.description1 && <p className="col-md-12 text-start">{teams.description1}</p>}
           {teams.description2 && (
-            <p className="col-md-6 text-start">
-              <span className="active-color">
-                {teams.description2 ? teams.leaders[1].name + "-" : ""}
-              </span>
-              {teams.description2}
-            </p>
-          )}
-          {teams.description3 && (
-            <p className="col-md-6 text-start">
-              <span className="active-color">
-                {teams.description3 ? teams.leaders[2].name + "-" : ""}
-              </span>
-              {teams.description3}
-              <Link to={teams.storyLink} style={{ textDecoration: "none" }}>
-                <span className="card-text fs-6 active-color btn-link mx-3">
-                  Read More
-                  <Icon path={mdiOpenInNew} size={1} color="#378CE7" className="mx-1 p-1" />
+            <div className="col-md-6 text-start">
+              <p>
+                <span className="active-color">
+                  {" "}
+                  {teams.description2 ? teams.leaders[1].name + "-" : ""}
                 </span>
-              </Link>
-            </p>
+                {teams.description2}
+              </p>
+              <p>
+                <span className="active-color">
+                  {teams.description3 ? teams.leaders[2].name + "-" : ""}
+                </span>
+                {teams.description3}
+              </p>
+            </div>
           )}
+          {teams.description4 && <p className="col-md-6 text-start">{teams.description4} </p>}
         </div>
       </div>
     </div>

@@ -18,7 +18,7 @@ const truncateHTML = (html, maxLength) => {
   return truncatedDiv.innerHTML;
 };
 
-export default function MediumBlogs({ blogs }) {
+export default function MediumBlogs({ blogs, blogLimit, isShortPreview }) {
   const [fetchedBlogs, setFetchedBlogs] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -26,14 +26,16 @@ export default function MediumBlogs({ blogs }) {
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
-        const response = await fetch(process.env.REACT_APP_BLOG_API);
+        const response = await fetch(
+          "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@subhajitsaha0x"
+        );
 
         if (!response.ok) {
           throw new Error("Network response was not ok");
         }
 
         const data = await response.json();
-        setFetchedBlogs(data.items.slice(0, 3));
+        setFetchedBlogs(data.items.slice(0, blogLimit));
       } catch (error) {
         setError("Error fetching Blogs.");
         console.error("Error fetching Blogs:", error);
@@ -54,50 +56,109 @@ export default function MediumBlogs({ blogs }) {
   }
 
   return (
-    <div className="pt-5 bg-dark text-light p-4">
-      <p className="card-title text-light display-5 text-start mb-5">{blogs.caption}</p>
-      <div className="row row-cols-1 row-cols-md-3 g-4">
-        <div className="col-md-4 mb-5 text-start">
-          <p className="badge text-bg-primary text-start">{blogs.badge}</p>
-          <h1 className="text-start fw-bold display-3 text-secondary">{blogs.title}</h1>
-          <p className="mb-4 fs-6 text-secondary text-start my-5">{blogs.description}</p>
-        </div>
-        {fetchedBlogs.map((blog, index) => (
-          <div key={index} className="col-md-2 my-2">
-            <div
-              className="card bg-light border-1 shadow-lg overflow-hidden card-hover-animation"
-              style={{ border: "none", minWidth: "350px" }}
-            >
-              <img
-                src={blogs.image}
-                className="card-img-top"
-                alt={blogs.title}
-                style={{ background: "#E6E6E6" }}
-              />
-              <div className="card-body">
-                <h5 className="card-title text-start">{`${blog.title.substring(0, 30)}...`}</h5>
-                <p className="card-text text-secondary text-start">
-                  <div
-                    className="card-text text-secondary text-start"
-                    dangerouslySetInnerHTML={{ __html: truncateHTML(blog.description, 100) }}
-                  />
-                  <Link
-                    to={blog.link}
-                    style={{ textDecoration: "none" }}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <p className="card-text fs-6 active-color py-2">
-                      ReadMore
-                      <Icon path={blogs.linkIcon} size={1} color="#378CE7" className="mx-1 p-1" />
-                    </p>
-                  </Link>
-                </p>
+    <div className={`pt-5 bg-${isShortPreview ? "dark" : "light"} text-light p-4`}>
+      <p
+        className={`card-title text-${isShortPreview ? "light" : "dark"} display-5 text-start mb-5`}
+      >
+        {blogs.caption}
+      </p>
+      {isShortPreview ? (
+        <div className="row row-cols-1 row-cols-md-3 g-4">
+          <div className="col-md-4 mb-5 text-start">
+            <p className="badge text-bg-primary text-start">{blogs.badge}</p>
+            <h1 className="text-start fw-bold display-3 text-secondary">{blogs.title}</h1>
+            <p className="mb-4 fs-6 text-secondary text-start my-5">{blogs.description}</p>
+          </div>
+          {fetchedBlogs.map((blog, index) => (
+            <div key={index} className="col-md-2 my-2">
+              <div
+                className="card bg-light border-1 shadow-lg overflow-hidden card-hover-animation"
+                style={{ border: "none", minWidth: "350px" }}
+              >
+                <img
+                  src={blogs.image}
+                  className="card-img-top"
+                  alt={blogs.title}
+                  style={{ background: "#E6E6E6" }}
+                />
+                <div className="card-body">
+                  <h5 className="card-title text-start">{`${blog.title.substring(0, 30)}...`}</h5>
+                  <p className="card-text text-secondary text-start">
+                    <div
+                      className="card-text text-secondary text-start"
+                      dangerouslySetInnerHTML={{ __html: truncateHTML(blog.description, 100) }}
+                    />
+                    <Link
+                      to={blog.link}
+                      style={{ textDecoration: "none" }}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <p className="card-text fs-6 active-color py-2">
+                        ReadMore
+                        <Icon path={blogs.linkIcon} size={1} color="#378CE7" className="mx-1 p-1" />
+                      </p>
+                    </Link>
+                  </p>
+                </div>
               </div>
             </div>
+          ))}
+        </div>
+      ) : (
+        <div className="container">
+          <div className="row my-4">
+            {fetchedBlogs.map((blog, index) => (
+              <div key={index} className="col-md-6 my-3">
+                <div className="card bg-light border-0 shadow-lg overflow-hidden card-hover-animation">
+                  <div className="row no-gutters">
+                    <div className="col-md-4">
+                      <img
+                        src={blogs.image}
+                        className="card-img rounded-0 p-4"
+                        alt={blogs.title}
+                        style={{ background: "#E6E6E6", height: "100%" }}
+                      />
+                    </div>
+                    <div className="col-md-8">
+                      <div className="card-body">
+                        <h5 className="card-title text-start">{`${blog.title.substring(
+                          0,
+                          40
+                        )}...`}</h5>
+                        <p className="card-text text-secondary text-start">
+                          <div
+                            className="card-text text-secondary text-start"
+                            dangerouslySetInnerHTML={{
+                              __html: truncateHTML(blog.description, 180),
+                            }}
+                          />
+                          <Link
+                            to={blog.link}
+                            style={{ textDecoration: "none" }}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <p className="card-text fs-6 active-color py-2">
+                              ReadMore
+                              <Icon
+                                path={blogs.linkIcon}
+                                size={1}
+                                color="#378CE7"
+                                className="mx-1 p-1"
+                              />
+                            </p>
+                          </Link>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
-        ))}
-      </div>
+        </div>
+      )}
     </div>
   );
 }

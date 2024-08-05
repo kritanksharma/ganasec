@@ -14,13 +14,14 @@ import ErrorPage from "./Pages/ErrorPage";
 import InProgress from "./Pages/InProgress";
 import Penetration from "./Pages/Penetration";
 import Services from "./Pages/Services";
+import AllBlogs from "./Pages/AllBlogs";
 
 function App() {
   const footerSection = {
     title: "GanaSec Cyber Solutions",
     block:
-      "Simplifying cybersecurity precision. Our budget-friendly pen tests fortify your digital world, empowering business growth and safety. Join us , where security challenges transform into growth opportunities. Experience the fastest, most affordable solutions for compliance and year-round asset security.",
-    address: "3RD FLOOR, B.S TOWER, ZOO ROAD TINIALI, AMBIKAGIRINAGAR, GUWAHATI, ASSAM 781024",
+      "We help businesses bridge the gap between Bug Bounty programs and in- house bug bounty hunters. Our pentest services provide critical findings at flexible, budget-friendly rates with continuous testing to ensure every release is secure.",
+    address: "GUWAHATI, ASSAM 781024",
     email: "SALES@GANASEC.COM",
     number: "",
     facebook: "",
@@ -39,11 +40,12 @@ function App() {
         <TopBar />
         <Routes>
           <Route exact path="/" element={<Home />} />
-          <Route path="/works" element={<Works />} />
+          <Route path="/engagement" element={<Works />} />
           <Route path="/about" element={<About />} />
-          <Route path="/services" element={<Services />} />
+          <Route path="/penetration-tests" element={<Services />} />
           <Route path="/penetration" element={<Penetration />} />
           <Route path="/inprogress" element={<InProgress />} />
+          <Route path="/blog" element={<AllBlogs />} />
 
           {/* Catch-all route for the error page */}
           <Route path="*" element={<ErrorPage />} />

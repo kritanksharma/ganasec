@@ -37,22 +37,28 @@ export default function navBar(props) {
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
               <ul className="navbar-nav me-auto mb-2 mb-lg-0 fw-bold fs-6">
                 <li className="nav-item">
+                  <Link to="/penetration-tests" className="nav-link d-flex justify-start mx-2 text">
+                    Penetration Tests
+                  </Link>
+                </li>
+                <li className="nav-item">
                   <Link
-                    to="/works"
+                    to="/engagement"
                     className="nav-link d-flex justify-start mx-2 text"
                     aria-current="page"
                   >
-                    How its works
+                    Engagement Process
                   </Link>
                 </li>
-                <li className="nav-item">
-                  <Link to="/services" className="nav-link d-flex justify-start mx-2 text">
-                    Services
-                  </Link>
-                </li>
+
                 <li className="nav-item">
                   <Link to="/about" className="nav-link d-flex justify-start mx-2 text">
                     About Us
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link to="/blog" className="nav-link d-flex justify-start mx-2 text">
+                    Blog
                   </Link>
                 </li>
                 <li className="nav-item">
