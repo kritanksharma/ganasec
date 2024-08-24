@@ -13,17 +13,17 @@ export default function Certifications({ certificates }) {
     >
       <div className="container">
         <p className="text-center m-4 display-6">{certificates.title}</p>
-        <div className="row my-4">
+        <div className="row my-4 d-flex justify-content-center">
           {certificates.list.map((element, index) => (
-            <div className="col-md-2 m-2 text-start" key={index}>
+            <div className="col-md-2 my-2 px-2 d-flex justify-content-center" key={index}>
               <div
-                className="card bg-light border-0 shadow-lg overflow-hidden card-hover-animation"
-                style={{ border: "none" , width:"200px"}}
+                className="card bg-light border-0 shadow-lg overflow-hidden"
+                style={{ border: "none" , width:"250px"}}
               >
                 <img
                   src={element.image}
                   className="card-img-top"
-                  style={{ backgroundColor: "#FFFFFF", height: "150px"}}
+                  style={{ backgroundColor: "#FFFFFF", height: "180px"}}
                   alt="..."
                 />
               </div>
