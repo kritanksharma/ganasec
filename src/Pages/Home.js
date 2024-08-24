@@ -87,4 +87,5 @@ export default function Home() {
       <MediumBlogs blogs={blogsSection} blogLimit="3" isShortPreview={true}></MediumBlogs>
     </div>
   );
+  
 }
