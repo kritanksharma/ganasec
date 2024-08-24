@@ -1,6 +1,6 @@
 import React from "react";
 import Icon from "@mdi/react";
-import logo from "../Static/logo6.png";
+import logo from "../Static/logo1.png";
 import { mdiFacebook, mdiLinkedin, mdiTwitter, mdiPost, mdiYoutubeSubscription } from "@mdi/js";
 export default function FooterSection1(props) {
   return (

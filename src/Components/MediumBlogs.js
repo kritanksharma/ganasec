@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./styles.css";
 import Icon from "@mdi/react";
 import { Link } from "react-router-dom";
+import axios from 'axios';
 
 // Re-structuring blogs content
 const truncateHTML = (html, maxLength) => {
@@ -26,16 +27,14 @@ export default function MediumBlogs({ blogs, blogLimit, isShortPreview }) {
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
-        const response = await fetch(
+        const response = await axios.get(
           "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@subhajitsaha0x"
         );
 
-        if (!response.ok) {
-          throw new Error("Network response was not ok");
-        }
-
-        const data = await response.json();
+       if(response && response.data){
+        const data = response.data;
         setFetchedBlogs(data.items.slice(0, blogLimit));
+       } 
       } catch (error) {
         setError("Error fetching Blogs.");
         console.error("Error fetching Blogs:", error);
@@ -45,7 +44,7 @@ export default function MediumBlogs({ blogs, blogLimit, isShortPreview }) {
     };
 
     fetchBlogs();
-  }, []);
+  }, [blogLimit]);
 
   if (loading) {
     return <div className="container text-center mt-5">Loading...</div>;
@@ -69,8 +68,8 @@ export default function MediumBlogs({ blogs, blogLimit, isShortPreview }) {
             <h1 className="text-start fw-bold display-3 text-secondary">{blogs.title}</h1>
             <p className="mb-4 fs-6 text-secondary text-start my-5">{blogs.description}</p>
           </div>
-          {fetchedBlogs.map((blog, index) => (
-            <div key={index} className="col-md-2 my-2">
+          {fetchedBlogs.map((blog) => (
+            <div key={blog.guid} className="col-md-2 my-2">
               <div
                 className="card bg-light border-1 shadow-lg overflow-hidden card-hover-animation"
                 style={{ border: "none", minWidth: "350px" }}
@@ -82,9 +81,9 @@ export default function MediumBlogs({ blogs, blogLimit, isShortPreview }) {
                   style={{ background: "#E6E6E6" }}
                 />
                 <div className="card-body">
-                  <h5 className="card-title text-start">{`${blog.title.substring(0, 30)}...`}</h5>
-                  <p className="card-text text-secondary text-start">
-                    <div
+                <h5 className="card-title text-start">{`${blog.title.substring(0, 30)}...`}</h5>
+                  <div className="card-text text-secondary text-start">
+                    <span
                       className="card-text text-secondary text-start"
                       dangerouslySetInnerHTML={{ __html: truncateHTML(blog.description, 100) }}
                     />
@@ -94,12 +93,12 @@ export default function MediumBlogs({ blogs, blogLimit, isShortPreview }) {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <p className="card-text fs-6 active-color py-2">
+                      <div className="card-text fs-6 active-color py-2">
                         ReadMore
                         <Icon path={blogs.linkIcon} size={1} color="#378CE7" className="mx-1 p-1" />
-                      </p>
+                      </div>
                     </Link>
-                  </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -122,24 +121,21 @@ export default function MediumBlogs({ blogs, blogLimit, isShortPreview }) {
                     </div>
                     <div className="col-md-8">
                       <div className="card-body">
-                        <h5 className="card-title text-start">{`${blog.title.substring(
-                          0,
-                          40
-                        )}...`}</h5>
-                        <p className="card-text text-secondary text-start">
-                          <div
+                      <h5 className="card-title text-start">{`${blog.title.substring(0, 35)}...`}</h5>
+                      <div className="card-text text-secondary text-start">
+                          <span
                             className="card-text text-secondary text-start"
                             dangerouslySetInnerHTML={{
                               __html: truncateHTML(blog.description, 180),
                             }}
-                          />
+                          ></span>
                           <Link
                             to={blog.link}
                             style={{ textDecoration: "none" }}
                             target="_blank"
                             rel="noopener noreferrer"
                           >
-                            <p className="card-text fs-6 active-color py-2">
+                            <div className="card-text fs-6 active-color py-2">
                               ReadMore
                               <Icon
                                 path={blogs.linkIcon}
@@ -147,9 +143,9 @@ export default function MediumBlogs({ blogs, blogLimit, isShortPreview }) {
                                 color="#378CE7"
                                 className="mx-1 p-1"
                               />
-                            </p>
+                            </div>
                           </Link>
-                        </p>
+                        </div>
                       </div>
                     </div>
                   </div>

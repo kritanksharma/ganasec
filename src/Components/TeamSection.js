@@ -21,7 +21,7 @@ export default function TeamSection({ teams }) {
         </h1>
         <div className="row my-4">
           <div className="col-md-4 my-5 text-start">
-            <p class="badge text-bg-primary text-start">{teams.badge}</p>
+            <p className="badge text-bg-primary text-start">{teams.badge}</p>
             <h1 className="text-start fw-bold display-4 text-secondary">{teams.subtitle}</h1>
           </div>
           {teams.leaders.map((element, index) => (

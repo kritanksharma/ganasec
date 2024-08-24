@@ -7,6 +7,8 @@ import line from "../Static/action-charts/lin2.png";
 import crest from "../Static/certificates/crest.jpg";
 import ina from "../Static/certificates/ine.png";
 import ec from "../Static/certificates/ec-council.png";
+import pl from "../Static/certificates/plabs.png";
+import secops from "../Static/certificates/secops.png";
 import HeadSection2 from "../Components/HeadSection2";
 import blogImage from "../Static/blockquote.svg";
 import { mdiBookArrowRight, mdiArrowRight, mdiCheckCircle, mdiQrcodeScan } from "@mdi/js";
@@ -73,7 +75,7 @@ export default function Home() {
   const certificateSection = {
     title: "Pentesting and Security Certifications & Awards",
     description: "",
-    list: [{ image: crest }, { image: ina }, { image: crest }, { image: ec }, { image: ina }],
+    list: [{ image: crest }, { image: ina }, { image: pl }, { image: ec }, { image: secops }],
   };
 
   return (

@@ -18,12 +18,12 @@ export default function Certifications({ certificates }) {
             <div className="col-md-2 m-2 text-start" key={index}>
               <div
                 className="card bg-light border-0 shadow-lg overflow-hidden card-hover-animation"
-                style={{ border: "none" }}
+                style={{ border: "none" , width:"200px"}}
               >
                 <img
                   src={element.image}
                   className="card-img-top"
-                  style={{ backgroundColor: "#E6E6E6", height: "150px" }}
+                  style={{ backgroundColor: "#FFFFFF", height: "150px"}}
                   alt="..."
                 />
               </div>
