@@ -1,14 +1,16 @@
 {
   "files": {
-    "main.css": "/ganasec/static/css/main.fccd3c2a.css",
-    "main.js": "/ganasec/static/js/main.ed543068.js",
+    "main.css": "/ganasec/static/css/main.6aec1cf7.css",
+    "main.js": "/ganasec/static/js/main.3ffcaca3.js",
     "static/js/453.4973b179.chunk.js": "/ganasec/static/js/453.4973b179.chunk.js",
     "static/media/bg2.png": "/ganasec/static/media/bg2.e778e60d0006654186aa.png",
-    "static/media/crest.jpg": "/ganasec/static/media/crest.3aaacf0154a67384d96f.jpg",
+    "static/media/cardbg1.jpg": "/ganasec/static/media/cardbg1.69245ffc3f48c2c583ff.jpg",
+    "static/media/crest.jpg": "/ganasec/static/media/crest.d4fe7cfc75a995113981.jpg",
     "static/media/logo.png": "/ganasec/static/media/logo.a72246e2f48cfd68e9ee.png",
     "static/media/lin2.png": "/ganasec/static/media/lin2.54394e826029ecb509a5.png",
     "static/media/connect.png": "/ganasec/static/media/connect.328b2fa24492c78944c1.png",
     "static/media/error.png": "/ganasec/static/media/error.6bd8d473146f46adb9c6.png",
+    "static/media/bugs.png": "/ganasec/static/media/bugs.4e4acdccac0cdcdc437e.png",
     "static/media/logo1.png": "/ganasec/static/media/logo1.899ef761453721f17c50.png",
     "static/media/line.png": "/ganasec/static/media/line.e13e0c5875c5c7b662fa.png",
     "static/media/plabs.png": "/ganasec/static/media/plabs.537afce3b58ead2a739c.png",
@@ -20,7 +22,6 @@
     "static/media/Post-Remediation.svg": "/ganasec/static/media/Post-Remediation.ed79587054f60417dcdb66c3c5f8c3f5.svg",
     "static/media/secops.png": "/ganasec/static/media/secops.d41ff37606477f09f3e1.png",
     "static/media/planning.svg": "/ganasec/static/media/planning.aa985c572da7da09cb0ec643abd370f4.svg",
-    "static/media/cardbg1.jpg": "/ganasec/static/media/cardbg1.19b06dcea54dbd62bb60.jpg",
     "static/media/Reporting.svg": "/ganasec/static/media/Reporting.65c817f60b91139874737d9d64711d3a.svg",
     "static/media/ine.png": "/ganasec/static/media/ine.0c2928c7616d2b2cbbfb.png",
     "index.html": "/ganasec/index.html",
@@ -30,12 +31,12 @@
     "static/media/qrcode.svg": "/ganasec/static/media/qrcode.63955b81c7c6a2c3810c9daabc780785.svg",
     "static/media/blockquote.svg": "/ganasec/static/media/blockquote.05671bd831c6ea4cc1026880151bc017.svg",
     "static/media/app-window.svg": "/ganasec/static/media/app-window.d4f5a8c433cbc383490c8a698c743edb.svg",
-    "main.fccd3c2a.css.map": "/ganasec/static/css/main.fccd3c2a.css.map",
-    "main.ed543068.js.map": "/ganasec/static/js/main.ed543068.js.map",
+    "main.6aec1cf7.css.map": "/ganasec/static/css/main.6aec1cf7.css.map",
+    "main.3ffcaca3.js.map": "/ganasec/static/js/main.3ffcaca3.js.map",
     "453.4973b179.chunk.js.map": "/ganasec/static/js/453.4973b179.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fccd3c2a.css",
-    "static/js/main.ed543068.js"
+    "static/css/main.6aec1cf7.css",
+    "static/js/main.3ffcaca3.js"
   ]
 }
