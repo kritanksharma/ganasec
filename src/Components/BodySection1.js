@@ -11,7 +11,7 @@ export default function BodySection1({ body }) {
   };
   return (
     <>
-      <div className="card w-100 px-3 text-start" style={{ border: "none", borderRadius: "0px" }}>
+      <div className="card w-100 p-4 text-start" style={{ border: "none", borderRadius: "0px" }}>
         <div className="row g-0">
           <div className="col-md-4">
             {body.img && (
@@ -30,7 +30,7 @@ export default function BodySection1({ body }) {
 
           <div className="col-md-8">
             <div className="card-body my-3 py-4">
-              <h2 className="card-title fw-medium basic-color display-5">{body.title}</h2>
+              <h2 className="card-title fw-medium basic-color display-6">{body.title}</h2>
               <AnimateBlock animationClass="slide-forward">
                 <p
                   className="card-text mt-3 fs-6 content-to-animate fs-6 text-secondary"

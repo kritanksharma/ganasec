@@ -25,7 +25,7 @@ export default function Works() {
     textOptions: false,
     textUpperCase: false,
     textAlign: "start",
-    height: "250px",
+    height: "220px",
     btnOptions: false,
     content:
       "The engagement process is a series of steps to plan, execute, and report on a penetration test, ensuring clear communication, defined scope, and effective results.",

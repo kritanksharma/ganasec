@@ -40,12 +40,12 @@ export default function TeamSection({ teams }) {
                   <h5 className="card-title fw-bold">{element.name}</h5>
                   <p className="card-subtitle"> {element.role}</p>
                   <p className="p-1 ">
-                    <a href={element.linkedin}>
+                 {element.linkedin &&  <a href={element.linkedin} target="_blank">
                       <Icon className="p-1" path={mdiLinkedin} size={1} title="LinkedIn" />
-                    </a>
-                    <a href={element.twitter}>
+                    </a>}
+                    { element.twitter && <a href={element.twitter } target="_blank">
                       <Icon className="p-1" path={mdiTwitter} size={1} title="Twitter" />
-                    </a>
+                    </a> }
                   </p>
                 </div>
               </div>
@@ -53,24 +53,31 @@ export default function TeamSection({ teams }) {
           ))}
         </div>
         <div className="row my-4">
-          {teams.description1 && <p className="col-md-12 text-start">{teams.description1}</p>}
-          {teams.description2 && (
-            <div className="col-md-6 text-start">
+          {teams.description0 && <p className="col-md-12 text-start">{teams.description0}</p>}
+            <div className="col-md-6 text-start mt-3">
               <p>
                 <span className="active-color">
                   {" "}
+                  {teams.description1 ? teams.leaders[0].name + "-" : ""}
+                </span>
+                {teams.description1}
+              </p>
+              <p>
+                <span className="active-color">
                   {teams.description2 ? teams.leaders[1].name + "-" : ""}
                 </span>
                 {teams.description2}
               </p>
-              <p>
+            
+            </div>
+            <div className="col-md-6 text-start">
+            <p>
                 <span className="active-color">
                   {teams.description3 ? teams.leaders[2].name + "-" : ""}
                 </span>
                 {teams.description3}
               </p>
             </div>
-          )}
           {teams.description4 && <p className="col-md-6 text-start">{teams.description4} </p>}
         </div>
       </div>

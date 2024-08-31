@@ -1,9 +1,20 @@
-import React from "react";
-import Icon from "@mdi/react";
-import { Link } from "react-router-dom";
+import React, { useEffect, useRef } from "react";
 import "./styles.css"; // Import the CSS file
 
 export default function ServiceSection(props) {
+  const tooltipRefs = useRef([]);
+  useEffect(() => {
+    tooltipRefs.current.forEach((ref) => {
+      if (ref) new window.bootstrap.Tooltip(ref);
+    });
+    // Cleanup tooltips on unmount
+    return () => {
+      tooltipRefs.current.forEach((ref) => {
+        if (ref) window.bootstrap.Tooltip.getInstance(ref)?.dispose();
+      });
+    };
+  }, [tooltipRefs]);
+
   return (
     <>
       <div
@@ -33,21 +44,15 @@ export default function ServiceSection(props) {
                     <div className="col-md-8">
                       <div className="card-body text-start">
                         <h5 className="card-title fw-bold text-uppercase fs-4">{card.title}</h5>
-                        <p className="card-text my-4 text-secondary fs-6 description-lines">
+                        <div
+                          className="card-text my-4 text-secondary fs-6 description-lines"
+                          ref={(el) => (tooltipRefs.current[index] = el)}
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title={card.description}
+                        >
                           {card.description}
-                        </p>
-
-                        <Link to={card.linkURL} style={{ textDecoration: "none" }}>
-                          <p className="card-text fs-6 active-color">
-                            {card.linkName}
-                            <Icon
-                              path={card.linkIcon}
-                              size={1}
-                              color="#378CE7"
-                              className="mx-1 p-1"
-                            />
-                          </p>
-                        </Link>
+                        </div>
                       </div>
                     </div>
                   </div>

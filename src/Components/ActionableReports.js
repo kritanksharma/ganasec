@@ -13,7 +13,7 @@ export default function ActionableReports(props) {
         <div className="row g-0 align-items-center">
           <div className="col-md-6">
             <div className="card-body pb-4">
-              <h2 className="card-title fw-medium basic-color display-5">{props.reports.title}</h2>
+              <h2 className="card-title fw-medium basic-color display-6">{props.reports.title}</h2>
               <AnimateBlock animationClass="slide-forward">
                 <p
                   className="card-text mt-5 fs-6 content-to-animate fs-6 text-secondary"
