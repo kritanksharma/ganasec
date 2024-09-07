@@ -53,7 +53,7 @@ export default function MediumBlogs({ blogs, blogLimit, isShortPreview }) {
   }
 
   return (
-    <div className={`pt-5 bg-${isShortPreview ? "dark" : "light"} text-light p-4 custom-pl`}>
+    <div className={`pt-5 bg-${isShortPreview ? "dark" : "light"} text-light p-4`}>
       <p className={`card-title text-${isShortPreview ? "light" : "dark"} display-5 text-start mb-5`}>{blogs.caption}</p>
       {isShortPreview ? (
         <div className="row row-cols-1 row-cols-md-3 g-4">
@@ -64,7 +64,7 @@ export default function MediumBlogs({ blogs, blogLimit, isShortPreview }) {
           </div>
           {fetchedBlogs.map((blog) => (
             <div key={blog.guid} className="col-md-2 my-2">
-              <div className="card bg-light border-1 shadow-lg overflow-hidden card-hover-animation" style={{ border: "none", minWidth: "350px" }}>
+              <div className="card bg-light border-1 shadow-lg overflow-hidden card-hover-animation card-width" style={{ border: "none" }}>
                 <img src={blogs.image} className="card-img-top" alt={blogs.title} style={{ background: "#E6E6E6" }} />
                 <div className="card-body">
                   <h5 className="card-title text-start">{`${blog.title.substring(0, 30)}...`}</h5>

@@ -28,7 +28,7 @@ export default function About() {
     description0:
       "At GanaSec, our founders, Ashish K and Subhajit Saha, bring a wealth of experience and passion to the table. Both are seasoned bug bounty hunters and security engineers who know the field inside and out.",
     description1:
-      " specializes in vulnerability detection, with extensive experience in identifying and addressing security flaws. His expertise was honed through his work at Microsoft, where he played a critical role in safeguarding their systems. ",
+      " security researcher known for his expertise in vulnerability analysis and threat intelligence. He has been recognised by over multiple organisations, earned multiple CVEs, and featured in publications like Forbes. ",
     description2:
       " has a strong background in building security programs for startups and unicorns like BlockFi and Klar. His experience includes leading security initiatives and collaborating with top tech companies. Subhajit also served as a Triager for BlockFi's HackerOne Program, where he helped manage and resolve security vulnerabilities.",
     description3:

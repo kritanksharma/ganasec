@@ -4,7 +4,7 @@ import Icon from "@mdi/react";
 export default function SubscriptionModels({ reports }) {
   return (
     <>
-      <div className="card w-100 my-3 p-5 text-start" style={{ border: "none", borderRadius: "0px" }}>
+      <div className="card w-100 my-3 p-2 text-start" style={{ border: "none", borderRadius: "0px" }}>
         <div className="row g-0 align-items-center p-4">
           <div className="col-md-6">
             <div className="card-body p-3">

@@ -148,8 +148,15 @@
 .ml-5 {
   margin-left: 20px;
 }
-.custom-pl {
-  padding-left: 65px !important;
+.card-width {
+  border: none;
+  min-width: 300px; 
+}
+
+@media (min-width: 768px) {
+  .card-width {
+    min-width: 350px; /* Styles for desktop */
+  }
 }
 
 @keyframes slide-left {
