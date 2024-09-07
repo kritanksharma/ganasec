@@ -2,13 +2,15 @@ import React from "react";
 import BodySection1 from "../Components/BodySection1";
 import chart1 from "../Static/action-charts/line.png";
 import chart2 from "../Static/action-charts/pie.png";
-import cardbg1 from "../Static/bg2.png";
-import line from "../Static/action-charts/lin2.png";
-import crest from "../Static/certificates/crest.jpg";
-import ina from "../Static/certificates/ine.png";
-import ec from "../Static/certificates/ec-council.png";
-import pl from "../Static/certificates/plabs.png";
-import secops from "../Static/certificates/secops.png";
+import bugs from "../Static/bugs.png";
+import cardbg1 from "../Static/bg5.svg";
+import eCCPT from "../Static/certificates/eCCPT.png";
+import eJPT from "../Static/certificates/eJPT.png";
+import eWPT from "../Static/certificates/eMPT.png";
+import eMPT from "../Static/certificates/eMPT.png";
+import eWPTX from "../Static/certificates/eWPTX.png";
+import CREST from "../Static/certificates/CREST.png";
+import CEH from "../Static/certificates/CEH.png";
 import HeadSection2 from "../Components/HeadSection2";
 import blogImage from "../Static/blockquote.svg";
 import { mdiBookArrowRight, mdiArrowRight, mdiCheckCircle, mdiQrcodeScan } from "@mdi/js";
@@ -28,10 +30,10 @@ export default function Home() {
     content:
       "Flexible, cost-effective penetration testing to help you achieve compliance and secure all your assets & stress free sprint releases.",
     cardbg1: cardbg1,
-    height: "65vh",
+    height: "auto",
   };
   const bodySection1 = {
-    img: line,
+    img: bugs,
     title: "Offensive Security across your entire Attack Surface !",
     block1:
       "Proactively safeguard your assets with our trusted community of experts, helping you defend at scale. We test, validate, and assist in patching vulnerabilities. Enjoy flexible engagement options tailored to your needs .",
@@ -75,7 +77,7 @@ export default function Home() {
   const certificateSection = {
     title: "Pentesting and Security Certifications & Awards",
     description: "",
-    list: [{ image: crest }, { image: ina }, { image: pl }, { image: ec }, { image: secops }],
+    list: [{ image: eCCPT }, { image: eWPT }, { image: eJPT }, { image: eMPT }, { image: eWPTX }, { image: CREST }, { image: CEH }],
   };
 
   return (

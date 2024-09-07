@@ -14,11 +14,7 @@ export default function navBar(props) {
   return (
     <>
       <div>
-        <nav
-          className="navbar navbar-expand-lg px-2"
-          data-bs-theme="dark"
-          style={{ backgroundColor: "black", border: "none" }}
-        >
+        <nav className="navbar navbar-expand-lg px-2" data-bs-theme="dark" style={{ backgroundColor: "black", border: "none" }}>
           <div className="container-fluid">
             <Link to="/" className="navbar-brand">
               <img src={logo} alt="Logo" height="80" className="justify-content-start" />
@@ -42,11 +38,7 @@ export default function navBar(props) {
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link
-                    to="/engagement"
-                    className="nav-link d-flex justify-start mx-2 text"
-                    aria-current="page"
-                  >
+                  <Link to="/engagement" className="nav-link d-flex justify-start mx-2 text" aria-current="page">
                     Engagement Process
                   </Link>
                 </li>
@@ -62,23 +54,14 @@ export default function navBar(props) {
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <span
-                    className="nav-link d-flex justify-start mx-2 text"
-                    onClick={connectHandler}
-                  >
+                  <span className="nav-link d-flex justify-start mx-2 text" onClick={connectHandler}>
                     Let's Connect
                   </span>
                 </li>
               </ul>
               <ul className="d-flex navbar-nav fw-bold fs-6">
                 <li>
-                  <a
-                    href={process.env.REACT_APP_CAL_API}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn nav-link d-flex justify-start mx-2 "
-                    style={{ width: "200px" }}
-                  >
+                  <a href={process.env.REACT_APP_CAL_API} target="_blank" rel="noopener noreferrer" className="btn nav-link d-flex justify-start mx-2 " style={{ width: "200px" }}>
                     <Icon path={mdiCalendarEdit} size={1} className="primary" />
                     <span className="mx-2">Book a Call</span>
                   </a>

@@ -4,7 +4,6 @@ import HeadSection from "../Components/HeadSection";
 import Icon from "@mdi/react";
 import { mdiEyeLock, mdiQrcodeScan, mdiWhatsapp, mdiEmailNewsletter } from "@mdi/js";
 export default function Penetration() {
-  
   // Email Configuration
   const email = "SALES@GANASEC.COM";
   const subject = "Schedule a Scoping Call";
@@ -24,33 +23,25 @@ export default function Penetration() {
   const penetration = [
     {
       title: "Schedule a Scoping Call with our experts",
-      block:
-        "Want to talk through the details: Get on a call with one of our experts and we’ll work with you step by step to get a custom quote, quickly.",
+      block: "Want to talk through the details: Get on a call with one of our experts and we’ll work with you step by step to get a custom quote, quickly.",
       btn: "Schedule a Scoping Call | Customized",
       titleIcon: mdiEyeLock,
       badge: "customized | Hands-on",
       subBlock:
         "We hold steadfast to the principles of honesty and transparency in all our business dealings, perpetually seeking refinement through imaginative problem-solving and assuming full responsibility for our actions and their consequences.",
-      email: `mailto:${email}?subject=${
-        encodeURIComponent(subject) + "~ customized "
-      }&body=I am interested to connect with you regarding customized pentest information & process.`,
-      whatsapp:
-        `${process.env.REACT_APP_WA_URL}?text=I am interested to connect for customized pentest with experts !!`,
+      email: `mailto:${email}?subject=${encodeURIComponent(subject) + "~ customized "}&body=I am interested to connect with you regarding customized pentest information & process.`,
+      whatsapp: `${process.env.REACT_APP_WA_URL}?text=I am interested to connect for customized pentest with experts !!`,
     },
     {
       title: "Schedule a Scoping Call with our experts",
-      block:
-        "Want to talk through the details: Get on a call with one of our experts and we’ll work with you step by step to get a custom quote, quickly.",
+      block: "Want to talk through the details: Get on a call with one of our experts and we’ll work with you step by step to get a custom quote, quickly.",
       btn: "Schedule a Scoping Call | Self-guided",
       titleIcon: mdiQrcodeScan,
       badge: "faster | Self-guided",
       subBlock:
         "We hold steadfast to the principles of honesty and transparency in all our business dealings, perpetually seeking refinement through imaginative problem-solving and assuming full responsibility for our actions and their consequences.",
-      email: `mailto:${email}?subject=${
-        encodeURIComponent(subject) + "~ self-guide"
-      }&body=I am interested to connect with you regarding self-guide pentest information & process.`,
-      whatsapp:
-      `${process.env.REACT_APP_WA_URL}?text=I am interested to connect for self-guide pentest with experts !!`,
+      email: `mailto:${email}?subject=${encodeURIComponent(subject) + "~ self-guide"}&body=I am interested to connect with you regarding self-guide pentest information & process.`,
+      whatsapp: `${process.env.REACT_APP_WA_URL}?text=I am interested to connect for self-guide pentest with experts !!`,
     },
   ];
 
@@ -62,10 +53,7 @@ export default function Penetration() {
           penetration.map((element, index) => (
             <div className="col-md-6" key={index}>
               <div className="card-hover-animation">
-                <span
-                  className="badge text-bg-danger"
-                  style={{ position: "relative", top: "5px", left: "19vw", zIndex: 1 }}
-                >
+                <span className="badge text-bg-danger" style={{ position: "relative", top: "5px", left: "19vw", zIndex: 1 }}>
                   {element.badge}
                 </span>
                 <div className="card text-start bg-light border-0 shadow-lg overflow-hidden">
@@ -77,25 +65,19 @@ export default function Penetration() {
                     <p className="card-text text-secondary fw-medium">{element.block}</p>
                     <p className="basic-color"> {element.subBlock}</p>
                     <div className="d-flex justify-content-between">
-                    <span className="p-1">
-                      <a href={element.whatsapp} target="_blank" rel="noopener noreferrer">
-                        <Icon path={mdiWhatsapp} size={1}  color="green" title="Connect via Whatsapp" />
-                      </a>
-                      <a href={element.email} target="_blank" rel="noopener noreferrer">
-                        <Icon
-                          className="mx-3"
-                          path={mdiEmailNewsletter}
-                          size={1}
-                          title="Connect via Email "
-                        />
-                      </a>
-                    </span>
+                      <span className="p-1">
+                        <a href={element.whatsapp} target="_blank" rel="noopener noreferrer">
+                          <Icon path={mdiWhatsapp} size={1} color="green" title="Connect via Whatsapp" />
+                        </a>
+                        <a href={element.email} target="_blank" rel="noopener noreferrer">
+                          <Icon className="mx-3" path={mdiEmailNewsletter} size={1} title="Connect via Email " />
+                        </a>
+                      </span>
 
-                 <a href={process.env.REACT_APP_CAL_API} target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-warning" style={{ width: "200px"}}>
-                  Book a Call
-                </a>
-      
-                   </div>
+                      <a href={process.env.REACT_APP_CAL_API} target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-warning" style={{ width: "200px" }}>
+                        Book a Call
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>

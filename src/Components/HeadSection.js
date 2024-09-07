@@ -8,12 +8,7 @@ import AnimateBlock from "./AnimateBlock";
 
 export default function HeadSection(props) {
   const [dynamicText, setDynamicText] = useState("With Vigilance Always at the Fore.");
-  const textOptions = [
-    "With Shield Against Threats.            ",
-    "With Watchful Eye Never Wavering.       ",
-    "With Shield Never Faltering.            ",
-    "With Vigilance Always at the Fore.       ",
-  ];
+  const textOptions = ["With Shield Against Threats.            ", "With Watchful Eye Never Wavering.       ", "With Shield Never Faltering.            ", "With Vigilance Always at the Fore.       "];
   useEffect(() => {
     const updateText = () => {
       const randomIndex = Math.floor(Math.random() * textOptions.length);
@@ -39,29 +34,16 @@ export default function HeadSection(props) {
         <div className={`card-body mx-3 text-${props.head.textAlign}`}>
           <AnimateBlock animationClass="slide-forward">
             <h4 className="fs-4 text-light fw-bold my-2 content-to-animate">
-              {props.head.textUpperCase
-                ? props.head.textCaption.toUpperCase()
-                : props.head.textCaption}
-              <span className="active-color">
-                {props.head.textUpperCase
-                  ? props.head.textCaptionHighlight.toUpperCase()
-                  : props.head.textCaptionHighlight}
-              </span>
+              {props.head.textUpperCase ? props.head.textCaption.toUpperCase() : props.head.textCaption}
+              <span className="active-color">{props.head.textUpperCase ? props.head.textCaptionHighlight.toUpperCase() : props.head.textCaptionHighlight}</span>
             </h4>
             <h3 className="display-6 text-light fw-bold mb-3 content-to-animate">
-              {props.head.textUpperCase
-                ? props.head.staticText.toUpperCase()
-                : props.head.staticText + " "}
-              <p className={`active-color text-opacity-75 text-${props.head.textAlign}`}>
-                {props.head.textOptions &&
-                  (props.head.textUpperCase ? dynamicText.toUpperCase() : dynamicText)}
-              </p>
+              {props.head.textUpperCase ? props.head.staticText.toUpperCase() : props.head.staticText + " "}
+              <p className={`active-color text-opacity-75 text-${props.head.textAlign}`}>{props.head.textOptions && (props.head.textUpperCase ? dynamicText.toUpperCase() : dynamicText)}</p>
             </h3>
           </AnimateBlock>
           <AnimateBlock animationClass="slide-upward">
-            <p className="card-text fs-6 text-secondary ontent-to-animate subtext">
-              {props.head.content}
-            </p>
+            <p className="card-text fs-6 text-secondary ontent-to-animate subtext">{props.head.content}</p>
             {props.head.btnOptions && (
               <div className="content-to-animate">
                 <Link to="/penetration">
@@ -71,10 +53,7 @@ export default function HeadSection(props) {
                   </button>
                 </Link>
                 <Link to="/inprogress">
-                  <button
-                    type="button"
-                    className="btn btn-outline-primary btn-outline-custom m-2 mt-3"
-                  >
+                  <button type="button" className="btn btn-outline-primary btn-outline-custom m-2 mt-3">
                     <Icon path={mdiCogs} size={1} className="primary" />
                     <span className="mx-2">Try few Vunerablity Tools</span>
                   </button>
@@ -83,12 +62,7 @@ export default function HeadSection(props) {
             )}
           </AnimateBlock>
         </div>
-        <img
-          src={props.head.cardbg1}
-          className="card-img-bottom w-100"
-          alt="..."
-          style={{ height: props.head.height }}
-        />
+        <img src={props.head.cardbg1} className="card-img-bottom w-100" alt="..." style={{ height: props.head.height }} />
       </div>
     </div>
   );

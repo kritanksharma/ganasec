@@ -17,15 +17,9 @@ export default function Timeline(props) {
               icon={<Icon path={element.icon} size={1} title={element.iconTitle} />}
             >
               <div className="text">
-              <img
-                src={element.img}
-                className="img-fluid rounded-start my-3"
-                alt="..."
-                width="300"
-                height="200"
-              />
-              <h3 className="vertical-timeline-element-title">{element.title}</h3>
-              <p>{element.block}</p>
+                <img src={element.img} className="img-fluid rounded-start my-3" alt="..." width="300" height="200" />
+                <h3 className="vertical-timeline-element-title">{element.title}</h3>
+                <p>{element.block}</p>
               </div>
             </VerticalTimelineElement>
           ))}

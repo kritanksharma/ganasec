@@ -14,10 +14,7 @@ export default function ChatBox(props) {
         </div>
         <div className="toast-body">
           <p className="text-start">Hello !</p>
-          <p className="text-start">
-            Looking for the fastest and most affordable Pentest in the market? We're here to help
-            you
-          </p>
+          <p className="text-start">Looking for the fastest and most affordable Pentest in the market? We're here to help you</p>
           <p className="text-start">
             <u>
               <a href="#/penetration">

@@ -17,8 +17,8 @@ export default function HeadSection2(props) {
           borderRadius: "0px",
         }}
       >
-        <div className="row g-0">
-          <div className="col-md-7">
+        <div className="row g-0 m-3 my-5">
+          <div className="col-md-8">
             <div className={`card-body mx-3 text-${props.head.textAlign}`}>
               <AnimateBlock animationclassName="slide-forward">
                 <h4 className="fs-5 text-light fw-bold my-4 content-to-animate">
@@ -47,7 +47,7 @@ export default function HeadSection2(props) {
                   {props.head.content}
                 </p>
                 {props.head.btnOptions && (
-                  <div className="content-to-animate my-5">
+                  <div className="content-to-animate mt-5 mb-3">
                     <Link to="/penetration">
                       <button type="button" className="btn btn-primary btn-custom m-2 mt-3" style={{ width: '250px' }} >
                         <Icon path={mdiCubeScan} size={1} color="#FFFFFF" />
@@ -72,7 +72,7 @@ export default function HeadSection2(props) {
           <div className="col-md-4">
             <img
               src={props.head.cardbg1}
-              className="card-img-bottom mx-4"
+              className="card-img-bottom mr-4"
               alt="..."
               style={{ height: props.head.height, width: props.head.width }}
             />

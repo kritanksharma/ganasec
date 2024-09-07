@@ -72,14 +72,7 @@ export default function Form() {
               <label htmlFor="email" className="form-label">
                 Email address
               </label>
-              <input
-                type="email"
-                className="form-control"
-                id="email"
-                aria-describedby="emailHelp"
-                value={email}
-                onChange={handleInputChange}
-              />
+              <input type="email" className="form-control" id="email" aria-describedby="emailHelp" value={email} onChange={handleInputChange} />
 
               <div id="emailHelp" className="form-text">
                 {emailError && <div className="text-danger">{emailError}</div>}
@@ -90,42 +83,22 @@ export default function Form() {
               <label htmlFor="subject" className="form-label">
                 What is your security objective?
               </label>
-              <input
-                type="text"
-                className="form-control"
-                id="subject"
-                value={subject}
-                onChange={handleInputChange}
-              />
+              <input type="text" className="form-control" id="subject" value={subject} onChange={handleInputChange} />
             </div>
             <div className="mb-3">
               <label htmlFor="message" className="form-label">
                 Message
               </label>
-              <textarea
-                type="text"
-                rows="4"
-                className="form-control"
-                id="message"
-                value={message}
-                onChange={handleInputChange}
-              />
+              <textarea type="text" rows="4" className="form-control" id="message" value={message} onChange={handleInputChange} />
             </div>
-            <button
-              type="submit"
-              disabled={!isEnable()}
-              className={`btn btn-${isEnable() ? "primary" : "primary"} btn btn-custom m-2 `}
-              onClick={handleFormSubmit}
-            >
+            <button type="submit" disabled={!isEnable()} className={`btn btn-${isEnable() ? "primary" : "primary"} btn btn-custom m-2 `} onClick={handleFormSubmit}>
               Submit
             </button>
           </form>
         </div>
       ) : null}
 
-      {complete === true ? (
-        <img src={connectbg} alt="..." style={{ width: "300px", height: "300px" }} />
-      ) : null}
+      {complete === true ? <img src={connectbg} alt="..." style={{ width: "300px", height: "300px" }} /> : null}
     </>
   );
 }

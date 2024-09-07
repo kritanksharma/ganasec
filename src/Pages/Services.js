@@ -1,5 +1,5 @@
 import React from "react";
-import { mdiScaleUnbalanced, mdiCheckCircle , mdiBookArrowRight } from "@mdi/js";
+import { mdiScaleUnbalanced, mdiCheckCircle, mdiBookArrowRight } from "@mdi/js";
 import service1 from "../Static/services/app-window.svg";
 import service2 from "../Static/services/netkwork.svg";
 import service3 from "../Static/services/cloud-lock.svg";
@@ -18,7 +18,8 @@ export default function Services() {
     textAlign: "start",
     height: "220px",
     btnOptions: false,
-    content: "Penetration testing simulates attacks on your systems to find weaknesses before real hackers do. Itʼs crucial for preventing costly data breaches and financial losses. By catching these issues early, you protect your business from major security threats and safeguard your reputation.",
+    content:
+      "Penetration testing simulates attacks on your systems to find weaknesses before real hackers do. Itʼs crucial for preventing costly data breaches and financial losses. By catching these issues early, you protect your business from major security threats and safeguard your reputation.",
     cardbg1: cardbg1,
   };
   const serviceSection = [
@@ -45,27 +46,25 @@ export default function Services() {
     },
   ];
   const subscriptionReports = {
-   badgeIcon: mdiScaleUnbalanced,
-   title: "Subscription models tailored to you !",
-   description: "Get continuous and actionable results prioritized by severity, so you know where to act first.",
+    badgeIcon: mdiScaleUnbalanced,
+    title: "Subscription models tailored to you !",
+    description: "Get continuous and actionable results prioritized by severity, so you know where to act first.",
     btnName: "Sample reports",
-    bthIcon : mdiBookArrowRight,
+    bthIcon: mdiBookArrowRight,
     btnURL: "",
-    block: 
-      {
-        title : 'Other Pentest Solutions' ,
-        pointIcon: mdiCheckCircle,
-        img: service2,
-        points : [
-          "Flexible : Start within 24 hours, with no long-term contract required",
-          "Budget Friendly : Cost-effective pricing tailored to fit various budgets.",
-          "Customizable : Tailor your subscription to fit specific needs or requirements.",
-          "Emergency Response :  Rapid response services for critical issues or breaches." ,
-          "Continuous : Ongoing, monthly testing to monitor and improve security." , 
-          "On-Demand : Access services as needed without a regular commitment."
-          
-        ]
-      },
+    block: {
+      title: "Other Pentest Solutions",
+      pointIcon: mdiCheckCircle,
+      img: service2,
+      points: [
+        "Flexible : Start within 24 hours, with no long-term contract required",
+        "Budget Friendly : Cost-effective pricing tailored to fit various budgets.",
+        "Customizable : Tailor your subscription to fit specific needs or requirements.",
+        "Emergency Response :  Rapid response services for critical issues or breaches.",
+        "Continuous : Ongoing, monthly testing to monitor and improve security.",
+        "On-Demand : Access services as needed without a regular commitment.",
+      ],
+    },
   };
   return (
     <>

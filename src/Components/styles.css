@@ -142,6 +142,15 @@
   background-color: #36454F;
   background-image: linear-gradient(#d3d3d3, #36454F);
 }
+.row > div {
+  transition: all 0.3s ease; /* Smooth transition for resizing */
+}
+.ml-5 {
+  margin-left: 20px;
+}
+.custom-pl {
+  padding-left: 65px !important;
+}
 
 @keyframes slide-left {
   from {

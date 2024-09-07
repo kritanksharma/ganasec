@@ -27,7 +27,7 @@ export default function ServiceSection(props) {
           overflow: "auto",
         }}
       >
-        <div className="container">
+        <div className="m-5">
           <div className="row my-4">
             {props.service.map((card, index) => (
               <div key={index} className="col-md-6 my-3">

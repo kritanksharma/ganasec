@@ -6,19 +6,13 @@ import AnimateBlock from "./AnimateBlock";
 export default function ActionableReports(props) {
   return (
     <>
-      <div
-        className="card w-100 my-5 p-4 text-start"
-        style={{ border: "none", borderRadius: "0px" }}
-      >
+      <div className="card w-100 mb-5 p-4 text-start" style={{ border: "none", borderRadius: "0px" }}>
         <div className="row g-0 align-items-center">
-          <div className="col-md-6">
+          <div className="col-md-7">
             <div className="card-body pb-4">
               <h2 className="card-title fw-medium basic-color display-6">{props.reports.title}</h2>
               <AnimateBlock animationClass="slide-forward">
-                <p
-                  className="card-text mt-5 fs-6 content-to-animate fs-6 text-secondary"
-                  style={{ textAlign: "justify" }}
-                >
+                <p className="card-text mt-5 fs-6 content-to-animate fs-6 text-secondary" style={{ textAlign: "justify" }}>
                   {props.reports.description}
                 </p>
                 {props.reports.points &&
