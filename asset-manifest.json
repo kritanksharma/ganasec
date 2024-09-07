@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ganasec/static/css/main.166f9f53.css",
-    "main.js": "/ganasec/static/js/main.3f93dd7d.js",
+    "main.css": "/ganasec/static/css/main.68a64301.css",
+    "main.js": "/ganasec/static/js/main.959a6720.js",
     "static/js/453.4973b179.chunk.js": "/ganasec/static/js/453.4973b179.chunk.js",
     "static/media/CEH.png": "/ganasec/static/media/CEH.74b309b5add7009f2468.png",
     "static/media/cardbg1.jpg": "/ganasec/static/media/cardbg1.69245ffc3f48c2c583ff.jpg",
@@ -32,12 +32,12 @@
     "static/media/qrcode.svg": "/ganasec/static/media/qrcode.63955b81c7c6a2c3810c9daabc780785.svg",
     "static/media/blockquote.svg": "/ganasec/static/media/blockquote.05671bd831c6ea4cc1026880151bc017.svg",
     "static/media/app-window.svg": "/ganasec/static/media/app-window.d4f5a8c433cbc383490c8a698c743edb.svg",
-    "main.166f9f53.css.map": "/ganasec/static/css/main.166f9f53.css.map",
-    "main.3f93dd7d.js.map": "/ganasec/static/js/main.3f93dd7d.js.map",
+    "main.68a64301.css.map": "/ganasec/static/css/main.68a64301.css.map",
+    "main.959a6720.js.map": "/ganasec/static/js/main.959a6720.js.map",
     "453.4973b179.chunk.js.map": "/ganasec/static/js/453.4973b179.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.166f9f53.css",
-    "static/js/main.3f93dd7d.js"
+    "static/css/main.68a64301.css",
+    "static/js/main.959a6720.js"
   ]
 }
