@@ -6,6 +6,7 @@ import service3 from "../Static/services/cloud-lock.svg";
 import service4 from "../Static/services/qrcode.svg";
 import ServiceSection from "../Components/ServiceSection";
 import cardbg1 from "../Static/cardbg1.jpg";
+import report from "../Static/reports/report.pdf";
 import HeadSection from "../Components/HeadSection";
 import SubscriptionModels from "../Components/SubscriptionModels";
 export default function Services() {
@@ -51,7 +52,7 @@ export default function Services() {
     description: "Get continuous and actionable results prioritized by severity, so you know where to act first.",
     btnName: "Sample reports",
     bthIcon: mdiBookArrowRight,
-    btnURL: "",
+    pdfPath: report,
     block: {
       title: "Other Pentest Solutions",
       pointIcon: mdiCheckCircle,

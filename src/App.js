@@ -21,14 +21,12 @@ function App() {
     title: "GanaSec Cyber Solutions",
     block:
       "We help businesses bridge the gap between Bug Bounty programs and in- house bug bounty hunters. Our pentest services provide critical findings at flexible, budget-friendly rates with continuous testing to ensure every release is secure.",
-    address: "GUWAHATI, ASSAM 781024",
-    email: "SALES@GANASEC.COM",
+    address: "Guwahati, Assam 781024",
+    email: "sales@ganasec.com",
     number: "",
-    facebook: "",
     linkedin: "https://www.linkedin.com/company/ganaseclabs",
     twitter: "https://x.com/ganaseclabs",
     blog: "",
-    youtube: "",
   };
   const [chatboxState, setChatboxState] = useState(false);
   const chatboxHandler = () => {

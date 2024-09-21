@@ -1,6 +1,10 @@
 import React from "react";
 import Icon from "@mdi/react";
 
+const handlePdfDownload = (pdfPath) => {
+  window.open(pdfPath, "_blank"); // This will open the PDF in a new tab
+};
+
 export default function SubscriptionModels({ reports }) {
   return (
     <>
@@ -29,10 +33,10 @@ export default function SubscriptionModels({ reports }) {
                       <span className="text-secondary text-start">{point.split(":")[1]}</span>
                     </p>
                   ))}
-                  <a href="/" target="_blank" className="btn btn-primary btn-danger mx-2 mt-3">
+                  <p className="btn btn-primary btn-danger mx-2 mt-3" onClick={() => handlePdfDownload(reports.pdfPath)}>
                     <Icon path={reports.bthIcon} size={1} />
                     <span className="mx-2">{reports.btnName}</span>
-                  </a>
+                  </p>
                 </div>
               </div>
             </div>

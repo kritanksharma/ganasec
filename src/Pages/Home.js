@@ -9,8 +9,9 @@ import eJPT from "../Static/certificates/eJPT.png";
 import eWPT from "../Static/certificates/eMPT.png";
 import eMPT from "../Static/certificates/eMPT.png";
 import eWPTX from "../Static/certificates/eWPTX.png";
-import CREST from "../Static/certificates/CREST.png";
-import CEH from "../Static/certificates/CEH.png";
+import CREST from "../Static/certificates/CREST.jpg";
+import CEH from "../Static/certificates/CEH.webp";
+import OSCP from "../Static/certificates/OSCP.png";
 import HeadSection2 from "../Components/HeadSection2";
 import blogImage from "../Static/blockquote.svg";
 import { mdiBookArrowRight, mdiArrowRight, mdiCheckCircle, mdiQrcodeScan } from "@mdi/js";
@@ -27,8 +28,7 @@ export default function Home() {
     textUpperCase: false,
     btnOptions: true,
     textAlign: "start",
-    content:
-      "Flexible, cost-effective penetration testing to help you achieve compliance and secure all your assets & stress free sprint releases.",
+    content: "Flexible, cost-effective penetration testing to help you achieve compliance and secure all your assets & stress free sprint releases.",
     cardbg1: cardbg1,
     height: "auto",
   };
@@ -38,12 +38,7 @@ export default function Home() {
     block1:
       "Proactively safeguard your assets with our trusted community of experts, helping you defend at scale. We test, validate, and assist in patching vulnerabilities. Enjoy flexible engagement options tailored to your needs .",
     pointIcon: mdiCheckCircle,
-    points: [
-      "Flexible & On-Demand Pentests",
-      "Detailed Technical and Executive Reports",
-      "Support for Developers During Remediation",
-      "Unlimited Retesting",
-    ],
+    points: ["Flexible & On-Demand Pentests", "Detailed Technical and Executive Reports", "Support for Developers During Remediation", "Unlimited Retesting"],
     btn: {
       btnIcon: mdiQrcodeScan,
       btnName: "Download Brocheure",
@@ -69,15 +64,14 @@ export default function Home() {
   const blogsSection = {
     badge: "Latest Posts",
     title: "Stay on top of industry news and trends",
-    description:
-      "We have been making offensive cybersecurity blogs and would love to share our knowledge with you!",
+    description: "We have been making offensive cybersecurity blogs and would love to share our knowledge with you!",
     image: blogImage,
     linkIcon: mdiArrowRight,
   };
   const certificateSection = {
     title: "Pentesting and Security Certifications & Awards",
     description: "",
-    list: [{ image: eCCPT }, { image: eWPT }, { image: eJPT }, { image: eMPT }, { image: eWPTX }, { image: CREST }, { image: CEH }],
+    list: [{ image: eCCPT }, { image: eWPT }, { image: eJPT }, { image: eMPT }, { image: eWPTX }, { image: OSCP }, { image: CREST }, { image: CEH }],
   };
 
   return (
@@ -89,5 +83,4 @@ export default function Home() {
       <MediumBlogs blogs={blogsSection} blogLimit="3" isShortPreview={true}></MediumBlogs>
     </div>
   );
-  
 }

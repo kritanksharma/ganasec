@@ -25,7 +25,7 @@ export default function BodySection1({ body }) {
 
           <div className="col-md-8">
             <div className="card-body mt-5 pt-5">
-              <h2 className="card-title fw-medium basic-color display-6">{body.title}</h2>
+              <h3 className="card-title fw-medium basic-color display-6">{body.title}</h3>
               <AnimateBlock animationClass="slide-forward">
                 <p className="card-text mt-3 fs-6 content-to-animate fs-6 text-secondary" style={{ textAlign: "justify" }}>
                   {body.block1}

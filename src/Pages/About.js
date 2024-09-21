@@ -22,9 +22,10 @@ export default function About() {
   };
   const teamSection1 = {
     badge: "Our leaders ",
-    title: "Founders",
-    titleHighlight: "Story",
-    subtitle: "Learn more about Gana Sec's founders",
+    title: "",
+    titleHighlight: "",
+    subtitle: "Learn more - Assembled Team of Hackers !",
+    hideStorySection : true , 
     description0:
       "At GanaSec, our founders, Ashish K and Subhajit Saha, bring a wealth of experience and passion to the table. Both are seasoned bug bounty hunters and security engineers who know the field inside and out.",
     description1:
@@ -41,7 +42,7 @@ export default function About() {
       {
         name: "Ashish K",
         photo: team,
-        role: "Founder",
+        role: "Partner",
         linkedin: "https://www.linkedin.com/in/ashish-kunwar",
         twitter: "",
       },

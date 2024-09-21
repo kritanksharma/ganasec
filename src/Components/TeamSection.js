@@ -41,12 +41,12 @@ export default function TeamSection({ teams }) {
                   <p className="card-subtitle"> {element.role}</p>
                   <p className="p-1 ">
                     {element.linkedin && (
-                      <a href={element.linkedin} target="_blank">
+                      <a href={element.linkedin} target="_blank" rel="noreferrer">
                         <Icon className="p-1" path={mdiLinkedin} size={1} title="LinkedIn" />
                       </a>
                     )}
                     {element.twitter && (
-                      <a href={element.twitter} target="_blank">
+                      <a href={element.twitter} target="_blank" rel="noreferrer">
                         <Icon className="p-1" path={mdiTwitter} size={1} title="Twitter" />
                       </a>
                     )}
@@ -56,7 +56,7 @@ export default function TeamSection({ teams }) {
             </div>
           ))}
         </div>
-        <div className="row my-4">
+       {teams.hideStorySection === false && ( <div className="row my-4">
           {teams.description0 && <p className="col-md-12 text-start">{teams.description0}</p>}
           <div className="col-md-6 text-start mt-3">
             <p>
@@ -82,7 +82,7 @@ export default function TeamSection({ teams }) {
             </p>
           </div>
           {teams.description4 && <p className="col-md-6 text-start">{teams.description4} </p>}
-        </div>
+        </div> )}
       </div>
     </div>
   );

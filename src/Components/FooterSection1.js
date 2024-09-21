@@ -1,12 +1,12 @@
 import React from "react";
 import Icon from "@mdi/react";
 import logo from "../Static/logo1.png";
-import { mdiFacebook, mdiLinkedin, mdiTwitter, mdiPost, mdiYoutubeSubscription } from "@mdi/js";
+import { mdiLinkedin, mdiTwitter, mdiPost } from "@mdi/js";
 export default function FooterSection1(props) {
   return (
     <div
       id="footer"
-      className="card w-100 bg-light py-1"
+      className="card w-100 bg-light py-4"
       style={{
         height: "100%",
         borderRadius: "0px",
@@ -18,7 +18,7 @@ export default function FooterSection1(props) {
           <div className="col-md-6 text-start">
             <div className="card bg-light" style={{ border: "none" }}>
               <div className="card-body m-0 p-0">
-                <h4 className="card-title mb-2">
+                <h4 className="card-title mb-3">
                   <img src={logo} alt="GanaSec" width="60" height="60" className="justify-content-start h-3" />
                   <b>{props.footer.title}</b>
                 </h4>
@@ -26,9 +26,6 @@ export default function FooterSection1(props) {
                   <small>{props.footer.block}</small>
                 </p>
                 <p className="p-1 bg-light">
-                  <a href={props.footer.facebook} className="text-dark icon">
-                    <Icon className="p-1" path={mdiFacebook} size={1} title="Facebook" />
-                  </a>
                   <a href={props.footer.linkedin} className="text-dark icon">
                     <Icon className="p-1" path={mdiLinkedin} size={1} title="LinkedIn" />
                   </a>
@@ -38,9 +35,6 @@ export default function FooterSection1(props) {
                   <a href={props.footer.blog} className="text-dark icon">
                     <Icon className="p-1" path={mdiPost} size={1} title="Medium" />
                   </a>
-                  <a href={props.footer.youtube} className="text-dark icon">
-                    <Icon className="p-1" path={mdiYoutubeSubscription} size={1} title="You Tube" />
-                  </a>
                 </p>
               </div>
             </div>
@@ -48,7 +42,7 @@ export default function FooterSection1(props) {
           <div className="col-md-2 text-start">
             <div className="card bg-light" style={{ border: "none" }}>
               <div className="card-body m-0 p-0">
-                <h4 className="card-title mb-2">
+                <h4 className="card-title mb-3">
                   <b>About Us</b>
                 </h4>
                 <p className="fs-6 fw-semibold icon">
@@ -291,7 +285,7 @@ export default function FooterSection1(props) {
           <div className="col-md-4 text-start">
             <div className="card bg-light" style={{ border: "none" }}>
               <div className="card-body m-0 p-0">
-                <h4 className="card-title mb-2">
+                <h4 className="card-title mb-3">
                   <b>Contact Us</b>
                 </h4>
                 <p className="fs-6">
