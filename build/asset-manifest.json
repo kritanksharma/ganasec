@@ -1,16 +1,15 @@
 {
   "files": {
     "main.css": "/ganasec/static/css/main.68a64301.css",
-    "main.js": "/ganasec/static/js/main.959a6720.js",
+    "main.js": "/ganasec/static/js/main.2ba6b188.js",
     "static/js/453.4973b179.chunk.js": "/ganasec/static/js/453.4973b179.chunk.js",
-    "static/media/CEH.png": "/ganasec/static/media/CEH.74b309b5add7009f2468.png",
     "static/media/cardbg1.jpg": "/ganasec/static/media/cardbg1.69245ffc3f48c2c583ff.jpg",
     "static/media/eMPT.png": "/ganasec/static/media/eMPT.ba2d3d75d9a842ecb23b.png",
     "static/media/eWPTX.png": "/ganasec/static/media/eWPTX.c96d09dad2c5f07f95cb.png",
     "static/media/eCCPT.png": "/ganasec/static/media/eCCPT.1fac8935952225bf1242.png",
     "static/media/eJPT.png": "/ganasec/static/media/eJPT.c32244b2687b3738bf1c.png",
+    "static/media/CREST.jpg": "/ganasec/static/media/CREST.d4fe7cfc75a995113981.jpg",
     "static/media/logo.png": "/ganasec/static/media/logo.a72246e2f48cfd68e9ee.png",
-    "static/media/CREST.png": "/ganasec/static/media/CREST.50401715978023b19f3e.png",
     "static/media/connect.png": "/ganasec/static/media/connect.328b2fa24492c78944c1.png",
     "static/media/error.png": "/ganasec/static/media/error.6bd8d473146f46adb9c6.png",
     "static/media/bugs.png": "/ganasec/static/media/bugs.4e4acdccac0cdcdc437e.png",
@@ -19,12 +18,14 @@
     "static/media/pie.png": "/ganasec/static/media/pie.0a616a2e8ee7587321bd.png",
     "static/media/Vulnerability.svg": "/ganasec/static/media/Vulnerability.20332eee7bf4e568b900d4405a3a4ec9.svg",
     "static/media/Penetration.svg": "/ganasec/static/media/Penetration.95dbd0713e41fa07b974174a58480ecd.svg",
+    "static/media/report.pdf": "/ganasec/static/media/report.4e44401ac02242f49d0e.pdf",
     "static/media/under-maintence.svg": "/ganasec/static/media/under-maintence.c3d2311d7e4209bc9c746a1ff65421dc.svg",
     "static/media/security.svg": "/ganasec/static/media/security.2cce5abb035aa21bb6556ac36d6be150.svg",
     "static/media/Post-Remediation.svg": "/ganasec/static/media/Post-Remediation.ed79587054f60417dcdb66c3c5f8c3f5.svg",
     "static/media/planning.svg": "/ganasec/static/media/planning.aa985c572da7da09cb0ec643abd370f4.svg",
     "static/media/Reporting.svg": "/ganasec/static/media/Reporting.65c817f60b91139874737d9d64711d3a.svg",
     "static/media/bg5.svg": "/ganasec/static/media/bg5.7bd9378be8517e1aac84d796d3c5b5c7.svg",
+    "static/media/CEH.webp": "/ganasec/static/media/CEH.d9330998869dfe83ecdc.webp",
     "index.html": "/ganasec/index.html",
     "static/media/cloud-lock.svg": "/ganasec/static/media/cloud-lock.113a8004005ddebb204d6c5257e643cd.svg",
     "static/media/netkwork.svg": "/ganasec/static/media/netkwork.98af577bb3324070ff39923b8a2f1afb.svg",
@@ -33,11 +34,11 @@
     "static/media/blockquote.svg": "/ganasec/static/media/blockquote.05671bd831c6ea4cc1026880151bc017.svg",
     "static/media/app-window.svg": "/ganasec/static/media/app-window.d4f5a8c433cbc383490c8a698c743edb.svg",
     "main.68a64301.css.map": "/ganasec/static/css/main.68a64301.css.map",
-    "main.959a6720.js.map": "/ganasec/static/js/main.959a6720.js.map",
+    "main.2ba6b188.js.map": "/ganasec/static/js/main.2ba6b188.js.map",
     "453.4973b179.chunk.js.map": "/ganasec/static/js/453.4973b179.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.68a64301.css",
-    "static/js/main.959a6720.js"
+    "static/js/main.2ba6b188.js"
   ]
 }
